@@ -1,3 +1,63 @@
+/*fonts pour le site*/
+	
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{font-family: 'Raleway', sans-serif;}
+
+
+/*Entête de la page */
+
+
+header{
+  
+}
+
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+nav a{
+    text-decoration: none;
+    color:#0065FC;
+    font-size: 1em;
+    font-weight: bold;
+
+
+}
+
+
+
+
+nav a:hover{
+
+
+    color: rgb(15, 36, 221);
+    border-top: solid;
+}
+
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    padding-right: 25px;
+    
+   
+    
+}
+
+
+.titre-principal{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
 .bloc-page
 {
 dd
