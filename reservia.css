@@ -2,174 +2,173 @@
 	
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-*{font-family: 'Raleway', sans-serif;}
+*{font-family: 'Raleway-Regular', sans-serif;}
 
 
 /*Entête de la page */
-
-
-header{ dd
-  
-}
-
-
-nav{
+header , .bloc-logo-et-nav
+{
     display: flex;
-    justify-content: flex-end;
-}
-
-
-nav a{
-    text-decoration: none;
-    color:#0065FC;
-    font-size: 1em;
-    font-weight: bold;
-
+    justify-content:space-between;
+  
 
 }
 
-
-
-
-nav a:hover{
-
-
-    color: rgb(15, 36, 221);
-    border-top: solid;
+.bloc-logo-et-nav
+{
+    flex: 1;
 }
-
-
+nav
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
 nav ul{
-    list-style-type: none;
     display: flex;
-}
-nav li{
-    padding-right: 25px;
     
-   
-    
-}
-
-
-.titre-principal{
-    color: black;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-
-.bloc-page
-{
-dd
-    
-}
-
-/* partie Article */
-section
-{
-    display: flex;
-  
-}
-
-article
-{
-    border: solid black 1px;
-    flex:3;
-    margin-right: 40px;
-    background-color:#F2F2F2;
-}
-
-aside
-{
-    border: solid 1px blue;
-    flex: 1.3;
-}
-.galerie-hebergement
-{
-    border: 1px red solid;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-
-.item
-{
-    width: 20rem;
-    margin: 15px;
-    background-color: white;
-}
-
-.item img
-{
-    
-    width: 99%;
-    padding: 10px;
-    object-fit: contain;
-    
-}
-
-/*parite Aside*/
-
-aside
-{
-    background-color: #F2F2F2;
-}
-.galerie-aside
-{
-   border: orange solid 1px; 
-   display: flex;
-   flex-wrap: wrap;
-   background-color:#F2F2F2 ;
-   justify-content: center;
-   
-    
-}
-
-.itemA
-{
-    display: flex;
+    flex-wrap: wrap-reverse;
     margin: 10px;
-    
-    background-color: white;
 }
-
-.galerie-aside .itemA img
+nav li
 {
-    object-fit: contain;
+    line-height: 40px;
+    padding: 0 20px;
+    list-style-type: none;
+}
+.logo
+{
+    box-sizing: border-box;
+}
+nav .groupe-li
+{
+    display: inline-flex;
+    
+}
+/* partie search */
+.search
+{
+    display: flex;
+     width: 400px;
+     border: 1px solid #f2f2f2;
+     margin-top: 20px;
+     align-items: center;
+     justify-content:space-between;
+     border-radius: 10px;
+     border: none;
+}
+i.fa-map-marker-alt
+{ 
+    position: relative;
+    right: -45px;
+    background: #eee;
+    color: #777;
+    height: 45px;
+    width: 30px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+input
+{
+   
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+#zone-de-recherche
+{
+   width: 240px;
+   height: 45px;
+   padding: 20px;
+   outline: none;
+   border-radius: 20px 0 0 20px;
+   border: none;
+  
+   
+}
+#bouton
+{
+    height: 45px;
+    cursor: pointer;
+    border-radius:0 10px 10px 0;
+    outline: none;
+    border: none;
+    position: relative;
+    left: -30px;
+    text-align: center;
+    line-height: 46px;
+    color: #fff;
+    background: #0065fc;
+    font-weight: bold;
+    
+}
+i.fa-search
+{
+    width: 30px;
+    margin-left: -30px;
+    color: #fff;
+}
+input[placeholder="Marseille, France"]
+{
+    font-weight: bold;
+    color: black;
+}
+#bouton :hover
+{
+    
 }
 
-.texte-galerie
+/*partie des filtres*/
+.filtres
 {
     display: flex;
     flex-wrap: wrap;
-    
-    margin-left: 2rem;
-    border: 1px violet solid;
-    padding-top: 20px;
-}
-.pied-de-page
-{
-
- display: flex;
- 
- 
-
- justify-content: space-around;
- flex-wrap: wrap;
-}
-
-#Nos-hebergements
-{
-    border: 1px solid black;
-}
-footer
-{
-   background-color: #F2F2F2; 
+    margin: 20 px auto;
     
 }
-#a-propos
+.filtres ul
 {
-    border: 1px solid black;
-  
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+   align-items: stretch;
 }
+.filtres li
+{
+    border: 1px solid #DEEBFF ;
+    border-radius: 50px;
+    margin: 5px;
+    padding-right: 20px;
+    color: black;
+    
 
+}
+.filtres a
+{
+    text-decoration: none;
+}
+.filtres li:hover
+{
+    background: rgb(68, 99, 167);
+}
+.filtres i
+{
+    background:#DEEBFF ;
+    color: #0065FC;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height:40px;
+    padding-top: 15px;
+}
+.filtres .titre-filtre
+{
+    color: black;
+    margin-top: 35px;
+}
+i.fa-info-circle
+{
+    color: #0065FC;
+    background:#DEEBFF ;
+}
