@@ -28,12 +28,12 @@ nav ul{
     display: flex;
     
     flex-wrap: wrap-reverse;
-    margin: 10px;
+    margin: 0.62rem;
 }
 nav li
 {
-    line-height: 40px;
-    padding: 0 20px;
+    line-height: 2.5rem;
+    padding: 0 1.25rem;
     list-style-type: none;
 }
 .logo
@@ -49,9 +49,9 @@ nav .groupe-li
 .search
 {
     display: flex;
-     width: 400px;
+     width: 25rem;
      border: 1px solid #f2f2f2;
-     margin-top: 20px;
+     margin-top: 1.25rem;
      align-items: center;
      justify-content:space-between;
      border-radius: 10px;
@@ -78,9 +78,9 @@ input
 }
 #zone-de-recherche
 {
-   width: 240px;
-   height: 45px;
-   padding: 20px;
+   width: 15rem;
+   height: 2.81rem;
+   padding: 1.25rem;
    outline: none;
    border-radius: 20px 0 0 20px;
    border: none;
@@ -89,15 +89,15 @@ input
 }
 #bouton
 {
-    height: 45px;
+    height: 2.81rem;
     cursor: pointer;
     border-radius:0 10px 10px 0;
     outline: none;
     border: none;
     position: relative;
-    left: -30px;
+    left: -1.87rem;
     text-align: center;
-    line-height: 46px;
+    line-height: 2.88rem;
     color: #fff;
     background: #0065fc;
     font-weight: bold;
@@ -105,8 +105,8 @@ input
 }
 i.fa-search
 {
-    width: 30px;
-    margin-left: -30px;
+    width: 1.87rem;
+    margin-left: -1.87rem;
     color: #fff;
 }
 input[placeholder="Marseille, France"]
@@ -124,7 +124,7 @@ input[placeholder="Marseille, France"]
 {
     display: flex;
     flex-wrap: wrap;
-    margin: 20 px auto;
+    margin: 1.25rem auto;
     
 }
 .filtres ul
@@ -137,9 +137,9 @@ input[placeholder="Marseille, France"]
 .filtres li
 {
     border: 1px solid #DEEBFF ;
-    border-radius: 50px;
-    margin: 5px;
-    padding-right: 20px;
+    border-radius: 3.12rem;
+    margin: 0.31rem;
+    padding-right: 1.25rem;
     color: black;
     
 
@@ -147,6 +147,7 @@ input[placeholder="Marseille, France"]
 .filtres a
 {
     text-decoration: none;
+    color: black;
 }
 .filtres li:hover
 {
@@ -158,17 +159,172 @@ input[placeholder="Marseille, France"]
     color: #0065FC;
     border-radius: 50%;
     text-align: center;
-    width: 40px;
-    height:40px;
-    padding-top: 15px;
+    width: 2.5rem;
+    height:2.5rem;
+    padding-top: 0.93rem;
 }
 .filtres .titre-filtre
 {
     color: black;
-    margin-top: 35px;
+    margin-top: 2.18rem;
 }
 i.fa-info-circle
 {
     color: #0065FC;
     background:#DEEBFF ;
+}
+
+/*partie section 1*/
+.partie-centrale
+{
+    display: flex;
+    justify-content: space-between;
+}
+#Hebergement
+{
+    background: #f2f2f2;
+    border-radius: 10px;
+    flex:1;
+    max-width: 1100px;
+    width: 85%;
+}
+#Hebergement h2
+{
+    margin-top: 1.56rem;
+    margin-left: 1.56rem;
+}
+.galerie-hebergement
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+.galerie-hebergement .item-galerie
+{
+    display: flex;
+    justify-content: space-between;
+    width: 21.56rem;
+    height: 18.75rem;
+    background-color: white;
+    margin: 0.62rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px gray; 
+}
+}
+
+#Hebergement .voir-plus
+{
+    margin-top: 1.56rem;
+    margin-left: 1.56rem;
+}
+.item-galerie img
+{
+    width: 95%;
+    margin: 0.31rem;
+    height: 48%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0.18rem;
+    object-fit: cover;
+    
+}
+.item-galerie :hover
+{
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+}
+.item-galerie a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.item-galerie .texte-sous-la-photo-galerie
+{
+    box-shadow: none;
+    margin-left: 1rem;
+}
+i.fa-star
+{
+    color: #0065FC;
+}
+.texte-sous-la-photo-galerie .icone-vide
+{
+    color: red;
+}
+aside
+{
+    background: #f2f2f2;
+    border-radius: 10px;
+    width: 25%;            
+    
+}
+aside h2
+{
+    display: inline-block;
+    width: 80%;
+    margin-left: 1.87rem;
+}
+.bloc-galerie-aside
+{
+    display: flex;
+    flex-direction: column;
+}
+.bloc-galerie-aside .item-aside a
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3.12rem;
+}
+.item-aside img
+{
+    margin-top: 1.87rem;
+    height: 90%;
+}
+
+/*Partie FOOTER*/
+footer
+{
+    background:#F2F2F2 ;
+    display: flex;
+    margin-top: 1.25rem;
+    
+}
+
+.bas-du-page
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer ul
+{
+    width: 20.62rem;
+    list-style-type: none;
+}
+footer h3
+{
+    margin-left: 1.25rem;
+}
+footer a
+{
+    text-decoration: none;
+    color:gray ;
+}
+footer li :hover
+{
+    color: blue;
+}
+
+
+/*PARTIE RESPONSIVE*/
+@media all and (max-width:980px)
+ {
+     .partie-centrale
+     {
+         display: flex;
+         flex-wrap: wrap-reverse;
+     }
+    
 }
