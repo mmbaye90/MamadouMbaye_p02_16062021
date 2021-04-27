@@ -5,91 +5,134 @@
 *{font-family: 'Raleway-Regular', sans-serif;}
 
 
-/*Entête de la page */
-header , .bloc-logo-et-nav
+/********* Entête de la page *******/
+header
 {
     display: flex;
-    justify-content:space-between;
-  
-
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;   
 }
 
-.bloc-logo-et-nav
+header .logo
 {
-    flex: 1;
-}
-nav
-{
-    display: flex;
-    justify-content: space-between;
+    height: 25%;
+    margin-top: 3.2rem;
+    flex: 0.8;
    
 }
-nav ul{
+nav ul
+{
+    margin-right: 3rem;
     display: flex;
     
-    flex-wrap: wrap-reverse;
-    margin: 0.62rem;
 }
-nav li
+header nav ul li
 {
-    line-height: 2.5rem;
-    padding: 0 1.25rem;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 30%;
+    padding: 0 2rem; 
+    
+}
+header nav ul li a
+{
+    text-decoration: none;
+    color: #0065FC;
+    padding: 2rem;
+    
+}
+header nav ul li .activity
+{
+    color:gray;
+}
+header nav ul li a:hover
+{
+     border-top: #0065FC solid 2px;
+    
+}
+header .inscription
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 3rem;
+    position: relative;
+    margin-top: 47.5px;
+    margin-left: -110px;
+}
+header .inscription a
+{
+    text-decoration: none;
+    color: #0065FC;
+    padding-top: 2rem;
+     
+}
+header .inscription a:hover
+{
+    border-top: 2px solid #0065FC;
+    
+}
+header .inscription li
+{
     list-style-type: none;
 }
-.logo
-{
-    box-sizing: border-box;
-}
-nav .groupe-li
-{
-    display: inline-flex;
-    
-}
+header
+/********* Entête de la page *******/
+
 /* partie search */
-.search
+.tete.search
 {
-    display: flex;
-     width: 25rem;
+     display: flex;
+     width: 400px;
+     height: 35px;
      border: 1px solid #f2f2f2;
      margin-top: 1.25rem;
      align-items: center;
-     justify-content:space-between;
+     flex-direction: row;
      border-radius: 10px;
      border: none;
+     justify-content: space-between;
 }
+
 i.fa-map-marker-alt
 { 
     position: relative;
-    right: -45px;
+    top: 55px;
     background: #eee;
     color: #777;
-    height: 45px;
-    width: 30px;
-    line-height: 42px;
+    height: 35px;
+    width: 40px;
+    line-height: 35px;
     text-align: center;
     border-radius: 10px 0 0 10px;
 }
-input
+.formulaire
+{
+    margin-left: 1.5rem;
+}
+.search input
 {
    
-    display: inline-block;
+    
     font-size: 20px;
     box-sizing: border-box;
 }
 #zone-de-recherche
 {
    width: 15rem;
-   height: 2.81rem;
+   height: 35px;
    padding: 1.25rem;
    outline: none;
-   border-radius: 20px 0 0 20px;
-   border: none;
-  
-   
+   border-radius: 10px 0 0 10px;
+   border: none; 
 }
 #bouton
 {
-    height: 2.81rem;
+    height: 35px;
     cursor: pointer;
     border-radius:0 10px 10px 0;
     outline: none;
@@ -97,42 +140,94 @@ input
     position: relative;
     left: -1.87rem;
     text-align: center;
-    line-height: 2.88rem;
+    line-height: 30px;
     color: #fff;
     background: #0065fc;
     font-weight: bold;
-    
+    overflow: hidden; /*je cache ma loupe de recherche pour la version desktop*/
 }
-i.fa-search
+i.fa-search  /*Loupe cachée*/
 {
-    width: 1.87rem;
+    width: 30px;
     margin-left: -1.87rem;
-    color: #fff;
+    color:#fff;
+    overflow: hidden;
 }
 input[placeholder="Marseille, France"]
 {
     font-weight: bold;
     color: black;
 }
-#bouton :hover
+#bouton:hover
 {
-    
+    box-shadow: 1px 1px 4px black;
 }
-
-/*partie des filtres*/
+/************partie des filtres**************/
 .filtres
 {
     display: flex;
     flex-wrap: wrap;
-    margin: 1.25rem auto;
+    align-items: center; 
+    margin: 1rem auto;
+}
+.filtres .titre-filtre
+{
+    
+    margin-right: 1.5rem;
+}
+.filtres .item-filtre
+{
+    display: flex;
+    border: 3px solid #F2F2F2;
+    align-items: center;
+    height: 35px;
+    margin-right: 2rem;
+    border-radius: 20px;
+    border: top left radius 20px;
     
 }
-.filtres ul
+.filtres .icone
+{
+    background: #DEEBFF;
+    margin-right: 0.70rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #0065FC;
+    border-radius: 80%;
+}
+.filtres .icone .filled
+{
+    border-radius: 100%; /*j'ai ciblé cet icone pour corriger le centrage*/
+    width: 16px;
+}
+.filtres .texte
+{
+    font-weight: bold;
+    color: black;
+    padding-right: 1rem;
+}
+.filtres .texte a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.filtres i
+{
+    padding: 0.5rem;  
+}
+
+ 
+/* partie filtre que j'avais réalisé avec des UL
+.filtres ul 
 {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-   align-items: stretch;
+    align-items: stretch;
 }
 .filtres li
 {
@@ -167,25 +262,48 @@ input[placeholder="Marseille, France"]
 {
     color: black;
     margin-top: 2.18rem;
-}
-i.fa-info-circle
-{
-    color: #0065FC;
-    background:#DEEBFF ;
-}
+}*/
 
-/*partie section 1*/
+
+/*********partie texte et logo info1***********/
+.logo-info-texte
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-info-texte .logo
+{
+    border: 3px solid #F2F2F2;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  
+}
+.logo-info-texte i
+{
+    padding:auto;
+    margin: auto;
+    color: #0065FC;
+    font-size: 12px;
+}
+/**************Partie Centrale************/
 .partie-centrale
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 #Hebergement
 {
     background: #f2f2f2;
     border-radius: 10px;
-    flex:1;
-    max-width: 1100px;
+    flex: 1;
+    max-width: 880px;
     width: 85%;
 }
 #Hebergement h2
@@ -195,22 +313,71 @@ i.fa-info-circle
 }
 .galerie-hebergement
 {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
+    max-width: 890px;
+    margin: 1rem;
 }
 .galerie-hebergement .item-galerie
 {
     display: flex;
     justify-content: space-between;
-    width: 21.56rem;
-    height: 18.75rem;
+    width: 250px;
+    height: 200px;
     background-color: white;
-    margin: 0.62rem;
+    margin: 1rem;
     border-radius: 20px;
-    box-shadow: 1px 1px 2px gray; 
+    box-shadow: 1px 1px 2px gray;   
 }
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie
+{
+  
+    width: 80%;
+    margin-top: 0.5px;
+}
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
+{
+    margin-top: 0.5px;
+    font-size: 15px;
+    
+    font-weight: bold;
+}
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3:hover
+{
+    box-shadow: none;
+}
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p
+{
+    margin-top: -6px;
+    color: gray;  
+}
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p:hover
+{
+    box-shadow: none;
+}
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile
+{
+    margin-top: -6px;
+}
+
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i
+{
+    color: #0065FC;
+}
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i.filled
+{
+    color: #F2F2F2;
+}
+.galerie-hebergement .item-galerie:hover
+{
+    background-color: white;
+    padding: 0.175rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 #Hebergement .voir-plus
@@ -218,7 +385,7 @@ i.fa-info-circle
     margin-top: 1.56rem;
     margin-left: 1.56rem;
 }
-.item-galerie img
+.galerie-hebergement .item-galerie img
 {
     width: 95%;
     margin: 0.31rem;
@@ -229,11 +396,7 @@ i.fa-info-circle
     object-fit: cover;
     
 }
-.item-galerie :hover
-{
-    box-shadow: 2px 2px 4px black;
-    border-radius: 10px;
-}
+
 .item-galerie a
 {
     text-decoration: none;
@@ -245,9 +408,10 @@ i.fa-info-circle
     box-shadow: none;
     margin-left: 1rem;
 }
-i.fa-star
+i.fa-star.empty
 {
-    color: #0065FC;
+    color:red;
+
 }
 .texte-sous-la-photo-galerie .icone-vide
 {
@@ -257,8 +421,9 @@ aside
 {
     background: #f2f2f2;
     border-radius: 10px;
-    width: 25%;            
-    
+    width: 25%; 
+    height: 600px;         
+    margin-right: 14rem;
 }
 aside h2
 {
@@ -266,22 +431,279 @@ aside h2
     width: 80%;
     margin-left: 1.87rem;
 }
+
 .bloc-galerie-aside
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.bloc-galerie-aside .item-aside
+{
+    margin: 1rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px gray;  
+    width: 80%;
+    height: 140px;
+}
+.bloc-galerie-aside .item-aside:hover
+{
+    background-color: white;
+    padding: 0.175rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.bloc-galerie-aside .item-aside img
+{
+    width: 35%;
+    height: 128px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0.40rem;
 }
 .bloc-galerie-aside .item-aside a
 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3.12rem;
+    text-decoration: none;
 }
-.item-aside img
+.bloc-galerie-aside a .texte-sous-la-photo-aside
 {
-    margin-top: 1.87rem;
-    height: 90%;
+    margin-left: 1rem;
+    width: 150px;
+    height: auto;
 }
+.bloc-galerie-aside a .texte-sous-la-photo-aside h3
+{
+    font-size: 15px;
+    color: black;  
+}
+.bloc-galerie-aside a .texte-sous-la-photo-aside p
+{
+    margin-top: -10px;
+    color: gray;  
+}
+.bloc-galerie-aside a .texte-sous-la-photo-aside .icone-etoile
+{
+    margin-top: 35px;
+}
+.bloc-galerie-aside a .texte-sous-la-photo-aside i
+{
+    color: #0065FC;
+}
+.bloc-galerie-aside a .texte-sous-la-photo-aside i.filled
+{
+    color:#F2F2F2 ;
+}
+
+/***********partie Activités**********/
+
+#activité .galerie-activité
+{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 1.rem;
+}
+#activité .galerie-activité .item-galerie-activité-photo-unique
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 1.6rem;
+    width: 305px;
+    height: 440px;
+    box-shadow: 0 0 16px #0000002e
+}
+#activité .galerie-activité .item-galerie-activité-photo-unique:hover
+{
+    background-color: white;
+    padding: 0.175rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 305px;
+    height: 440px;
+    justify-content: space-between;
+}
+#activité .galerie-activité .item-galerie-activité-photo-unique img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 392px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#activité .galerie-activité .item-galerie-activité-photo-unique a
+{
+    text-decoration: none;
+}
+#activité .galerie-activité .item-galerie-activité-photo-unique a p
+{
+    width: 250px;
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+    color: black;
+    font-weight: bold;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
+{
+    border-radius: 20px;
+    height: 230px;
+    box-shadow: 0 0 16px #0000002e;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue:hover
+{
+    background-color: white;
+    padding: 0.175rem;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box; 
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue img
+{
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue a
+{
+    text-decoration: none;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue p
+{
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+    color: black;
+    font-weight: bold;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
+{
+    border-radius: 20px;
+    height: 170px;
+    box-shadow: 0 0 20px #0000002e;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout:hover
+{
+    background-color: white;
+    padding: 0.175rem;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;   
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout a
+{
+    text-decoration: none; 
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout p
+{
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+    color: black;
+    font-weight: bold;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
+{
+    border-radius: 20px; 
+    height: 180px;
+    box-shadow: 0 0 20px #0000002e;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame:hover
+{
+    background-color: white;
+    padding: 0.175rem;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;  
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 135px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame a
+{
+    text-decoration: none;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame p
+{
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+    color: black;
+    font-weight: bold;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
+{
+    border-radius: 20px;
+    height: 220px; 
+    box-shadow: 0 0 20px #0000002e; 
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc:hover
+{
+    background-color: white;
+    padding: 0.175rem;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;   
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img
+{
+  object-fit: cover;
+  width: 100%;
+  height: 174px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc a
+{
+    text-decoration: none;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc p
+{
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+    color: black;
+    font-weight: bold;  
+}
+
+
 
 /*Partie FOOTER*/
 footer
