@@ -23,7 +23,7 @@ header .conteneur-navigation .logo
 {
     flex: 0.93;
     margin-top: 13px;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 header .conteneur-navigation .conteneur-lii
 {
@@ -41,6 +41,7 @@ header .conteneur-navigation .inscription
 header .conteneur-navigation .inscription:hover
 {
     border-top: 3px solid #0065FC;
+    padding: 11px 8px;
 }
 header .conteneur-navigation .conteneur-lii .item-lii
 {
@@ -121,16 +122,26 @@ input[type="text"]
 }
 .principale .filtres .titre-filtre
 {
-    width: 100%;
+    width: 50%;
 }
 .principale .filtres .item-filtre
 {
     margin-bottom: 1rem;
+    margin-left: 1.2rem;
+}
+.principale .filtres .ensemble .sous-ensemble
+{
+    margin-left: -1rem;
+}
+.principale .logo-info-texte .logo
+{
+  margin-top: -1.2rem;
 }
 .principale .logo-info-texte p
 {
-    padding-top: 1rem;
-    padding-left: 0.5rem;
+   font-size: 14px;
+   color: gray;
+   margin-top: 10px;
 }
 aside .bloc-galerie-aside
 {
@@ -138,7 +149,6 @@ aside .bloc-galerie-aside
 }
 
 }
-/********* Entête de la page *******/
 /*************************************PARTIE PRINCIPALE******************************/
 .principale
 {
@@ -195,6 +205,10 @@ button[type="submit"]
   right: 1.2rem;
 }  
 /********************PARTIE FILTRES*************************/
+.principale
+{
+    margin-left: 2.5rem;
+}
 .principale .filtres
 {
     display: flex;
@@ -218,6 +232,10 @@ button[type="submit"]
     margin-right: 2.5rem;
     border-radius: 20px;
 }
+.principale .filtres .ensemble
+{
+    display: inline-flex;
+}
 .principale .filtres .icone
 {
     background: #DEEBFF;
@@ -226,6 +244,7 @@ button[type="submit"]
     color: #0065FC;
     width: 40px;
     border-radius: 100%;
+    text-align: center;
 }
 .principale .filtres .texte a
 {
@@ -239,12 +258,8 @@ button[type="submit"]
 {
     color: #0065FC;
     line-height: 40px;
-    padding-left: 10px;
 }
-.principale .filtres .icone i.filled
-{
-    padding-left: 13px;
-}
+
 
 /*********partie texte et logo info1***********/
 .principale .logo-info-texte
@@ -260,10 +275,10 @@ button[type="submit"]
     width: 25px;
     height: 25px;
     border-radius: 100%;
+    text-align: center;
 }
 .principale .logo i
 {
-    padding-left: 8px;
     color: #0065FC;
     font-size: 10px;
 }
@@ -271,6 +286,7 @@ button[type="submit"]
 .partie-centrale
 {
     display: flex;
+    justify-content: space-around;
 }
 #Hebergement
 {
@@ -391,9 +407,7 @@ aside
 {
     background: #f2f2f2;
     border-radius: 10px;
-   
-    height: 600px;         
-    margin-right: 14rem;
+    width: 400px;
 }
 aside h2
 {
