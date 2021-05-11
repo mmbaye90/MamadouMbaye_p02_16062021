@@ -393,16 +393,7 @@ aside h2
     box-shadow: 0 0 16px #0000002e;
     margin-right: 4.5rem;
 }
-#activité .galerie-activité .item-galerie-activité-photo-unique:hover
-{
-    background-color: white;
-    padding: 0.175rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;
-}
+
 #activité .galerie-activité .item-parent-galerie-activité-photo-double
 {
     display: flex;
@@ -439,16 +430,7 @@ aside h2
     height: 230px;
     box-shadow: 0 0 16px #0000002e;
 }
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue:hover
-{
-    background-color: white;
-    padding: 0.175rem;
-    border-radius: 20px;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box; 
-}
+
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue img
 {
   object-fit: cover;
@@ -474,16 +456,7 @@ aside h2
     height: 170px;
     box-shadow: 0 0 20px #0000002e;
 }
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout:hover
-{
-    background-color: white;
-    padding: 0.175rem;
-    border-radius: 20px;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;   
-}
+
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img
 {
     object-fit: cover;
@@ -509,16 +482,7 @@ aside h2
     height: 180px;
     box-shadow: 0 0 20px #0000002e;
 }
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame:hover
-{
-    background-color: white;
-    padding: 0.175rem;
-    border-radius: 20px;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;  
-}
+
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame img
 {
     object-fit: cover;
