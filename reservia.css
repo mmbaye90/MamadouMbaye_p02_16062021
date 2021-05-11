@@ -625,6 +625,13 @@ footer li :hover
      {
          margin-left: 1rem;
      }
+     header .conteneur-navigation
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: inherit;
+}
      header .conteneur-navigation .inscription
      {
          order: 1;
@@ -644,7 +651,7 @@ footer li :hover
      }
      header .conteneur-navigation .conteneur-lii .item-lii a
      {
-         padding: 11px 60px;
+         padding: 10px 60px;
      }
  header .conteneur-navigation .conteneur-lii .item-lii .heb
  {
@@ -711,15 +718,23 @@ footer li :hover
  }
  #Hebergement
 {
-    margin-left: 0;  
+    margin-left: 0;
+    border-radius: inherit;
+    background: white;  
 }
  aside
  {
     margin-right: 0;
+    border-radius: inherit;
  }
+
  aside .bloc-galerie-aside
  {
-     width: 365px; 
+  
+ }
+ .bloc-galerie-aside .item-aside
+ {
+     width: 279px;
  }
  #activité .galerie-activité
  {
