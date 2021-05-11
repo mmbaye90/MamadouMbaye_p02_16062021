@@ -12,6 +12,7 @@ body
 
 
 /********* Entête de la page *******/
+
 header .conteneur-navigation
 {
     display: flex;
@@ -21,9 +22,9 @@ header .conteneur-navigation
 }
 header .conteneur-navigation .logo
 {
-    flex: 0.93;
+    flex: 0.92;
     margin-top: 13px;
-    margin-left: 2.5rem;
+    margin-left: 4.5rem;
 }
 header .conteneur-navigation .conteneur-lii
 {
@@ -33,7 +34,7 @@ header .conteneur-navigation .conteneur-lii
 }
 header .conteneur-navigation .inscription
 {
-    margin-right: 3.5rem;
+    margin-right: 4.5rem;
     text-decoration: none;
     font-weight: bold;
     color: #0065FC;
@@ -66,102 +67,17 @@ header .conteneur-navigation .conteneur-lii .item-lii .acti:hover
 {
     border-top: 3px solid #0065FC;
 }
-@media (max-width: 980px) {
-   
-    header .conteneur-navigation .inscription
-    {
-        order: 1;
-        margin-right: 1.5rem;
-    }
-    header .conteneur-navigation .conteneur-lii
-    {
-        order: 2;
-    }
-    header .conteneur-navigation .conteneur-lii .item-lii .acti
-    {
-        border-bottom: #F2F2F2 solid 3px;
-    }
-    header .conteneur-navigation .conteneur-lii .item-lii .heb
-    {
-        border-bottom: #0065FC solid 3px;
-    }
-    header .conteneur-navigation .conteneur-lii .item-lii a
-    {
-        padding: 11px 60px;
-    }
-header .conteneur-navigation .conteneur-lii .item-lii .heb
-{
-    padding-top: 11px;
-    margin-right: 2px;
-    padding-right: 2rem;
-}
-.principale h1
-{
-    font-size: 22px;
-}
-button[type="submit"]
-{
-   border-bottom-right-radius: 10px;
-   border-top-right-radius: 10px;
-   border-top-left-radius: 14px;
-   border-bottom-left-radius: 14px;
-   overflow: hidden;
-   position: relative;
-   margin-left: -3rem;
-   width: 50px;
-}
-.principale .zone-recherche i.empty
-{
-    line-height: 42px;
-    overflow: hidden;
-    padding-left: 2rem;    
-}
-input[type="text"]
-{
-  padding: 0 4rem;  
-}
-.principale .filtres .titre-filtre
-{
-    width: 50%;
-}
-.principale .filtres .item-filtre
-{
-    margin-bottom: 1rem;
-    margin-left: 1.2rem;
-}
-.principale .filtres .ensemble .sous-ensemble
-{
-    margin-left: -1rem;
-}
-.principale .logo-info-texte .logo
-{
-  margin-top: -1.2rem;
-}
-.principale .logo-info-texte p
-{
-   font-size: 14px;
-   color: gray;
-   margin-top: 10px;
-}
-aside .bloc-galerie-aside
-{
-    width: 375px;
-}
-
-}
 /*************************************PARTIE PRINCIPALE******************************/
-.principale
-{
-    margin: 1.9rem;
-}
 .principale .phrase-accroche
 {
     color: gray;
+   
 }
 .principale .zone-recherche
 {
     display: flex;
     align-items: center;
+    
 }
 input[type="text"]
 {
@@ -207,7 +123,7 @@ button[type="submit"]
 /********************PARTIE FILTRES*************************/
 .principale
 {
-    margin-left: 2.5rem;
+    margin-left: 4.5rem;
 }
 .principale .filtres
 {
@@ -286,28 +202,26 @@ button[type="submit"]
 .partie-centrale
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 1rem;
 }
 #Hebergement
 {
-    display: flex;
     background: #f2f2f2;
-    border-radius: 10px;
-    flex-direction: column;
-   
+    border-radius: 1.5rem;
+    width: 970px;
+    margin-left: 4.5rem;  
 }
 #Hebergement h2
 {
-    margin-top: 1.56rem;
-    margin-left: 1.56rem;
+    margin-top: 1.7rem;
+    margin-left: 4rem;
 }
 .galerie-hebergement
 {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 850px;
-    margin: 1rem;
+    flex-wrap: wrap; 
+    margin-left: 3.4rem;
 }
 .galerie-hebergement .item-galerie
 {
@@ -318,7 +232,7 @@ button[type="submit"]
     background-color: white;
     margin: 1rem;
     border-radius: 20px;
-    box-shadow: 1px 1px 2px gray;   
+    box-shadow: 1px 1px 2px gray;  
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie
 {
@@ -332,24 +246,16 @@ button[type="submit"]
     font-size: 15px;
     font-weight: bold;
 }
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3:hover
-{
-    box-shadow: none;
-}
+
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p
 {
     margin-top: -6px;
     color: gray;  
 }
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p:hover
-{
-    box-shadow: none;
-}
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile
 {
     margin-top: -6px;
 }
-
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i
 {
     color: #0065FC;
@@ -358,21 +264,10 @@ button[type="submit"]
 {
     color: #F2F2F2;
 }
-.galerie-hebergement .item-galerie:hover
-{
-    background-color: white;
-    padding: 0.175rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
 #Hebergement .voir-plus
 {
     margin-top: 1.56rem;
-    margin-left: 1.56rem;
+    margin-left: 4rem;
 }
 #Hebergement .voir-plus a
 {
@@ -390,24 +285,20 @@ button[type="submit"]
     object-fit: cover;
     
 }
-
 .item-galerie a
 {
     text-decoration: none;
     color: black;
 }
-
 .item-galerie .texte-sous-la-photo-galerie
 {
-    box-shadow: none;
-    margin-left: 1rem;
+     margin-left: 1rem;
 }
-
 aside
 {
     background: #f2f2f2;
-    border-radius: 10px;
-    width: 400px;
+    border-radius: 1.5rem;
+    margin-right: 4.5rem;
 }
 aside h2
 {
@@ -421,31 +312,22 @@ aside h2
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
 }
 .bloc-galerie-aside .item-aside
 {
     margin: 1rem;
     background-color: white;
     margin: 1rem;
+    width: 320px;
     border-radius: 20px;
     box-shadow: 1px 1px 2px gray;  
-    width: 80%;
-    height: 140px;
-}
-.bloc-galerie-aside .item-aside:hover
-{
-    background-color: white;
-    padding: 0.175rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;
+    height: 130px;
 }
 .bloc-galerie-aside .item-aside img
 {
     width: 35%;
-    height: 128px;
+    height: 130px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -488,24 +370,28 @@ aside h2
 }
 
 /***********partie Activités**********/
-
+#activité h2
+{
+    margin-left: 4.5rem;
+    margin-top: 4rem;
+}
 #activité .galerie-activité
 {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 1400px;
-    margin: 1.rem;
+    margin-left: 4.2rem;
+    margin-bottom: 3rem;
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique
 {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    margin: 1.6rem;
     width: 305px;
     height: 440px;
-    box-shadow: 0 0 16px #0000002e
+    box-shadow: 0 0 16px #0000002e;
+    margin-right: 4.5rem;
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique:hover
 {
@@ -525,6 +411,7 @@ aside h2
     width: 305px;
     height: 440px;
     justify-content: space-between;
+    margin-right: 4.5rem;
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique img
 {
@@ -694,29 +581,36 @@ footer
 {
     background:#F2F2F2 ;
     display: flex;
-    margin-top: 1.25rem;
-    
 }
-
-.bas-du-page
+footer .pied-page
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+.item-pied-page
+{
+    margin-right: 7rem;
 }
 footer ul
 {
     width: 20.62rem;
     list-style-type: none;
+    margin-left: -1.2rem;
+}
+footer ul li
+{
+    padding-bottom: 0.5rem;
 }
 footer h3
 {
     margin-left: 1.25rem;
 }
-footer a
+footer ul li a
 {
     text-decoration: none;
-    color:gray ;
+    color: gray;
 }
 footer li :hover
 {
@@ -727,10 +621,117 @@ footer li :hover
 /*PARTIE RESPONSIVE*/
 @media all and (max-width:980px)
  {
-     .partie-centrale
+     header .conteneur-navigation .logo
      {
-         display: flex;
-         flex-wrap: wrap-reverse;
+         margin-left: 1rem;
      }
+     header .conteneur-navigation .inscription
+     {
+         order: 1;
+         margin-right: 0;
+     }
+     header .conteneur-navigation .conteneur-lii
+     {
+         order: 2;
+     }
+     header .conteneur-navigation .conteneur-lii .item-lii .acti
+     {
+         border-bottom: #F2F2F2 solid 3px;
+     }
+     header .conteneur-navigation .conteneur-lii .item-lii .heb
+     {
+         border-bottom: #0065FC solid 3px;
+     }
+     header .conteneur-navigation .conteneur-lii .item-lii a
+     {
+         padding: 11px 60px;
+     }
+ header .conteneur-navigation .conteneur-lii .item-lii .heb
+ {
+     padding-top: 11px;
+     margin-right: 2px;
+     padding-right: 2rem;
+ }
+ .principale
+{
+    margin-left: 1rem;
+}
+ .principale h1
+ {
+     font-size: 22px;
+ }
+ button[type="submit"]
+ {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -3rem;
+    width: 50px;
+ }
+ .principale .zone-recherche i.empty
+ {
+     line-height: 42px;
+     overflow: hidden;
+     padding-left: 2rem;    
+ }
+ input[type="text"]
+ {
+   padding: 0 4rem;  
+ }
+ .principale .filtres .titre-filtre
+ {
+     width: 50%;
+ }
+ .principale .filtres .item-filtre
+ {
+     margin-bottom: 1rem;
+     margin-left: 1.2rem;
+ }
+ .principale .filtres .ensemble .sous-ensemble
+ {
+     margin-left: -1rem;
+ }
+ .principale .logo-info-texte .logo
+ {
+   margin-top: -1.2rem;
+ }
+ .principale .logo-info-texte p
+ {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+ }
+ .partie-centrale
+ {
+     display: flex;
+     flex-wrap: wrap-reverse;
+ }
+ #Hebergement
+{
+    margin-left: 0;  
+}
+ aside
+ {
+    margin-right: 0;
+ }
+ aside .bloc-galerie-aside
+ {
+     width: 365px; 
+ }
+ #activité .galerie-activité
+ {
+     margin-left: 0;
+ }
+ footer .pied-page
+ {
+     margin-left: 0;
+ }
+ .item-pied-page
+{
+    margin-right: 0;
+}
     
 }
