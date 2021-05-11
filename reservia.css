@@ -508,16 +508,7 @@ aside h2
     height: 220px; 
     box-shadow: 0 0 20px #0000002e; 
 }
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc:hover
-{
-    background-color: white;
-    padding: 0.175rem;
-    border-radius: 20px;
-    box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;   
-}
+
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img
 {
   object-fit: cover;
