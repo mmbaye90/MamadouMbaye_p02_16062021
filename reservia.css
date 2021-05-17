@@ -12,61 +12,54 @@ body
 
 
 /********* Entête de la page *******/
-
-header .conteneur-navigation
+header
+{
+    display: flex;
+}
+header .logo
+{
+    flex: 0.98;
+    margin-top: 1.2rem;
+    margin-left: 4.5rem;
+} 
+header nav
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
-header .conteneur-navigation .logo
+header nav a
 {
-    flex: 0.92;
-    margin-top: 13px;
-    margin-left: 4.5rem;
-}
-header .conteneur-navigation .conteneur-lii
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-}
-header .conteneur-navigation .inscription
-{
-    margin-right: 4.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: #0065FC;
-}
-header .conteneur-navigation .inscription:hover
-{
-    border-top: 3px solid #0065FC;
-    padding: 11px 8px;
-}
-header .conteneur-navigation .conteneur-lii .item-lii
-{
-    list-style-type: none;
-}
-header .conteneur-navigation .conteneur-lii .item-lii a
-{
-    text-decoration: none;
-    color: inherit;
     padding: 11px 40px;
 }
-header .conteneur-navigation .conteneur-lii .item-lii .heb:hover
+header nav .conteneur-heb-act
 {
-    border-top: 3px solid #0065FC;
+    margin-top: 14px;  
+}
+header nav .conteneur-heb-act a
+{
+    text-decoration: none;
     color: #0065FC;
+    font-size: 16px;
 }
-header .conteneur-navigation .conteneur-lii .item-lii .heb
+header nav .conteneur-heb-act .acti
 {
+    color: gray;
+}
+header nav .sign-up
+{
+    margin-top: 14px;  
+}
+header nav .sign-up a
+{
+    text-decoration: none;
     color: #0065FC;
+    font-weight: bold;
 }
-header .conteneur-navigation .conteneur-lii .item-lii .acti:hover
+header nav a:hover
 {
-    border-top: 3px solid #0065FC;
+    border-top: solid 3px #0065FC;
 }
+
 /*************************************PARTIE PRINCIPALE******************************/
 .principale .phrase-accroche
 {
@@ -151,6 +144,18 @@ button[type="submit"]
 .principale .filtres .ensemble
 {
     display: inline-flex;
+}
+.principale .filtres .ensemble2
+{
+    display: inline-flex; 
+}
+.principale .filtres .ensemble :hover
+{
+    background: #DEEBFF;
+}
+.principale .filtres .ensemble2 :hover
+{
+    background: #DEEBFF;  
 }
 .principale .filtres .icone
 {
@@ -385,8 +390,8 @@ aside h2
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique
 {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     border-radius: 20px;
     width: 305px;
     height: 440px;
@@ -573,47 +578,50 @@ footer li :hover
 }
 
 
-/*PARTIE RESPONSIVE*/
+/*********************PARTIE RESPONSIVE : MOBILE ***************************/
 @media all and (max-width:980px)
  {
-     header .conteneur-navigation .logo
+     /********************************HEADER**************************/
+     header .logo
      {
          margin-left: 1rem;
      }
-     header .conteneur-navigation
+     header nav
 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: inherit;
 }
-     header .conteneur-navigation .inscription
+     header nav .sign-up
      {
          order: 1;
-         margin-right: 0;
+         margin-top: 2.3rem;
+         margin-left: 8rem;
      }
-     header .conteneur-navigation .conteneur-lii
+     header nav .conteneur-heb-act
      {
          order: 2;
+         display: flex;
+         margin-left: -9rem;
      }
-     header .conteneur-navigation .conteneur-lii .item-lii .acti
+     header nav .conteneur-heb-act .acti
      {
          border-bottom: #F2F2F2 solid 3px;
      }
-     header .conteneur-navigation .conteneur-lii .item-lii .heb
+     header nav .conteneur-heb-act .heb
      {
          border-bottom: #0065FC solid 3px;
      }
-     header .conteneur-navigation .conteneur-lii .item-lii a
+     header nav .conteneur-heb-act a
      {
-         padding: 10px 60px;
+         padding: 20px 65px;
      }
- header .conteneur-navigation .conteneur-lii .item-lii .heb
- {
-     padding-top: 11px;
-     margin-right: 2px;
-     padding-right: 2rem;
- }
+     header nav a:hover
+{
+    border-top: none;
+}
+/***********************************MAIN******************************/
  .principale
 {
     margin-left: 1rem;
@@ -641,7 +649,11 @@ footer li :hover
  }
  input[type="text"]
  {
-   padding: 0 4rem;  
+   padding: 0 2rem; 
+   font-size: 16px;
+   color: black;
+   font-weight: bold;
+   font-size: 16px; 
  }
  .principale .filtres .titre-filtre
  {
@@ -655,6 +667,11 @@ footer li :hover
  .principale .filtres .ensemble .sous-ensemble
  {
      margin-left: -1rem;
+ }
+ .principale .filtres .ensemble2
+ {
+    display: inline-flex;
+    flex-direction: column;
  }
  .principale .logo-info-texte .logo
  {
@@ -682,14 +699,9 @@ footer li :hover
     margin-right: 0;
     border-radius: inherit;
  }
-
- aside .bloc-galerie-aside
- {
-  
- }
  .bloc-galerie-aside .item-aside
  {
-     width: 279px;
+     width: 298px;
  }
  #activité .galerie-activité
  {
@@ -704,4 +716,108 @@ footer li :hover
     margin-right: 0;
 }
     
+}
+/********************PARTIE RESPONSIVE : TABLETTE*******************/
+@media all and (min-width: 768px) and (max-width:1025px)
+{
+    header nav
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: inherit;
+    }
+    header nav .sign-up
+     {
+         margin-top: 0.7rem;
+         margin-left: 0;
+         order: 2;
+     }
+     header nav .conteneur-heb-act
+     {
+         display: flex;
+         margin-left: 0;
+         order: 1;
+     }
+     header nav .conteneur-heb-act .acti
+     {
+         border-bottom: none;
+     }
+     header nav .conteneur-heb-act .heb
+     {
+         border-bottom: none;
+     }
+     header nav .conteneur-heb-act a
+     {
+         padding: 11px 40px;
+     }
+     header .logo
+     {
+        margin-left: 2.5rem;
+     }
+     .principale
+     {
+         margin-left: 2.7rem;
+     }
+     .principale .filtres .ensemble2
+     {
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: -2rem;
+     }
+     .principale .filtres .ensemble2 .item-filtre
+     {
+         margin-right: 5px;
+     }
+     .principale .logo-info-texte .logo
+ {
+   margin-top: -2px;
+ }
+ aside
+ {
+    border-radius: 20px;
+    margin-left: 2.7rem;
+    width: 675px;
+ }
+ .bloc-galerie-aside .item-aside
+ {
+   width: 80%;  
+ }
+ .bloc-galerie-aside .item-aside img
+ {
+    width: 60%;
+ }
+ .galerie-hebergement .item-galerie
+{
+    margin-left: 2.7rem; 
+}
+#activité .galerie-activité
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#activité .galerie-activité .item-galerie-activité-photo-unique
+{
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 20px;
+    width: 305px;
+    height: 440px;
+    box-shadow: 0 0 16px #0000002e;
+    margin: 2.5rem;
+}
+footer ul
+{
+    width: 15rem;
+    list-style-type: none;
+    margin-left: -1.2rem;
+    
+}
+.item-pied-page
+{
+    margin-right: 2rem;
+}
+
+
+
 }
