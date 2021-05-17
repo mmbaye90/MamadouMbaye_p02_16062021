@@ -323,7 +323,6 @@ aside h2
 {
     margin: 1rem;
     background-color: white;
-    margin: 1rem;
     width: 320px;
     border-radius: 20px;
     box-shadow: 1px 1px 2px gray;  
@@ -798,8 +797,6 @@ footer li :hover
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique
 {
-    /* display: flex;
-    flex-direction: column; */
     border-radius: 20px;
     width: 305px;
     height: 440px;
@@ -818,6 +815,55 @@ footer ul
     margin-right: 2rem;
 }
 
+}
+/*******************PARTIE RESPONSIVE HORS TAB***************************/
+@media all and (min-width: 1025px) and (max-width:1200px)
+{
+    aside
+ {
+     margin-left: 2rem;
+ }
+ aside h2
+ {
+     margin-top: 1.7rem;
+ }
+ .bloc-galerie-aside .item-aside
+{
+    margin-bottom: 4rem;  
+}
+ #Hebergement .galerie-hebergement
+ {
+     margin-left: 0.5rem;
+     margin-right: 0.5rem;
+ }
+ #activité .galerie-activité .item-galerie-activité-photo-unique
+{
+    margin-right: 1rem;
+    margin-left: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    order: 1;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double
+{
+    order: 2;
+    margin-right: 1rem;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+footer ul
+{
+    width: 20.6rem;
+    list-style-type: none;
+    margin-left: -1.2rem;
+    
+}
+.item-pied-page
+{
+    margin-right: 3rem;
+}
+
+}
 
 
 }
