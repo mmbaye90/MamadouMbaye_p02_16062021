@@ -207,7 +207,7 @@ button[type="submit"]
 .partie-centrale
 {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 1rem;
 }
 #Hebergement
@@ -215,7 +215,8 @@ button[type="submit"]
     background: #f2f2f2;
     border-radius: 1.5rem;
     width: 970px;
-    margin-left: 4.5rem;  
+    margin-left: 4.5rem; 
+    margin-right: 2rem;
 }
 #Hebergement h2
 {
@@ -582,7 +583,8 @@ footer li :hover
 
 
 
-@media all and (max-width:600px)
+/* @media all and (max-width:600px) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
  {
      /********************************HEADER**************************/
      header .logo
@@ -590,12 +592,12 @@ footer li :hover
          margin-left: 1rem;
      }
      header nav
-{
+    {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: inherit;
-}
+    }
      header nav .sign-up
      {
          order: 1;
@@ -622,14 +624,14 @@ footer li :hover
          font-size: 18px;
      }
      header nav a:hover
-{
+    {
     border-top: none;
-}
-/***********************************MAIN******************************/
+    }
+    /***********************************MAIN******************************/
  .principale
-{
+    {
     margin-left: 1rem;
-}
+    }   
  .principale h1
  {
      font-size: 22px;
@@ -825,7 +827,8 @@ footer
     
 }
 /********************PARTIE RESPONSIVE : TABLETTE*******************/
-@media all and (min-width: 605px) and (max-width:1024px)
+/* @media all and (min-width: 605px) and (max-width:768px) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
 {
     header nav
     {
@@ -1023,51 +1026,3 @@ footer .pied-page
 
 
 /*******************PARTIE RESPONSIVE HORS TAB***************************/
-/* @media all and (min-width: 1100px) and (max-width:1200px)
-{
-    aside
-    {
-     margin-right: 2rem;
-     }
-    aside h2
-    {
-     margin-top: 1.7rem;
-    }
-    .bloc-galerie-aside .item-aside
-    {
-    margin-bottom: 4rem;  
-    }
-    #Hebergement .galerie-hebergement
-    {
-     margin-left: 0.5rem;
-     margin-right: 0.5rem;
-    }
-    #activité .galerie-activité .item-galerie-activité-photo-unique
-    {
-    margin-right: 1rem;
-    margin-left: 7rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    order: 1;
-    }
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double
-    {
-    order: 2;
-    margin-right: 1rem;
-    margin-left: 7rem;
-    margin-top: 2rem;
-    }
-    footer ul
-    {
-    width: 20.6rem;
-    list-style-type: none;
-    margin-left: -1.2rem;
-    
-    }
-    .item-pied-page
-    {
-    margin-right: 3rem;
-    }
-
-
-}
