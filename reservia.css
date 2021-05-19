@@ -9,18 +9,23 @@ body
     padding: 0;
     margin: 0;
 }
-
+#blocpage
+{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /********* Entête de la page *******/
 header
 {
     display: flex;
+    
 }
 header .logo
 {
-    flex: 0.98;
+    flex: 1;
     margin-top: 1.2rem;
-    margin-left: 4.5rem;
 } 
 header nav
 {
@@ -116,7 +121,7 @@ button[type="submit"]
 /********************PARTIE FILTRES*************************/
 .principale
 {
-    margin-left: 4.5rem;
+    
 }
 .principale .filtres
 {
@@ -214,9 +219,9 @@ button[type="submit"]
 {
     background: #f2f2f2;
     border-radius: 1.5rem;
-    width: 970px;
-    margin-left: 4.5rem; 
-    margin-right: 2rem;
+    /* width: 970px; */
+    margin-right: 3rem;
+   
 }
 #Hebergement h2
 {
@@ -226,15 +231,14 @@ button[type="submit"]
 .galerie-hebergement
 {
     display: flex;
-    flex-wrap: wrap; 
-    margin-left: 3.4rem;
+    flex-wrap: wrap;
+    padding-left: 1.4rem;
 }
 .galerie-hebergement .item-galerie
 {
     display: flex;
-    justify-content: space-between;
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 220px;
     background-color: white;
     margin: 1rem;
     border-radius: 20px;
@@ -242,7 +246,7 @@ button[type="submit"]
 }
 .galerie-hebergement .item-galerie img
 {
-    width: 95%;
+    width: 96%;
     margin: 0.31rem;
     height: 48%;
     border-top-left-radius: 10px;
@@ -304,7 +308,7 @@ aside
 {
     background: #f2f2f2;
     border-radius: 1.5rem;
-    margin-right: 4.5rem;
+    /* margin-right: 4.5rem; */
 }
 aside h2
 {
@@ -377,15 +381,14 @@ aside h2
 /***********partie Activités**********/
 #activité h2
 {
-    margin-left: 4.5rem;
     margin-top: 4rem;
 }
 #activité .galerie-activité
 {
     display: flex;
-    align-items: center;
+    
     flex-wrap: wrap;
-    margin-left: 4.2rem;
+    
     margin-bottom: 3rem;
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique
@@ -394,7 +397,12 @@ aside h2
     width: 305px;
     height: 440px;
     box-shadow: 0 0 16px #0000002e;
-    margin-right: 4.5rem;
+    margin-right: 5.7rem;
+    margin-top: 2rem;
+}
+#activité .galerie-activité .premiere
+{
+    margin-right: 5.7rem;
 }
 
 #activité .galerie-activité .item-parent-galerie-activité-photo-double
@@ -405,7 +413,7 @@ aside h2
     width: 305px;
     height: 440px;
     justify-content: space-between;
-    margin-right: 4.5rem;
+    margin-top: 2rem;
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique img
 {
@@ -545,7 +553,8 @@ footer .pied-page
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
-    margin-left: 4rem;
+    margin-left: 1.7rem;
+    
 }
 .item-pied-page
 {
