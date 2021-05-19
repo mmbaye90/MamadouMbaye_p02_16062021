@@ -119,10 +119,6 @@ button[type="submit"]
   right: 1.2rem;
 }  
 /********************PARTIE FILTRES*************************/
-.principale
-{
-    
-}
 .principale .filtres
 {
     display: flex;
@@ -165,7 +161,7 @@ button[type="submit"]
 .principale .filtres .icone
 {
     background: #DEEBFF;
-    margin-left: -1.2rem;
+    margin-left: -0.5rem;
     height: 40px;
     color: #0065FC;
     width: 40px;
@@ -308,7 +304,6 @@ aside
 {
     background: #f2f2f2;
     border-radius: 1.5rem;
-    /* margin-right: 4.5rem; */
 }
 aside h2
 {
