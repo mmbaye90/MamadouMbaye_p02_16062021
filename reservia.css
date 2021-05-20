@@ -228,12 +228,12 @@ button[type="submit"]
 {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 1.4rem;
+    justify-content: center;
 }
 .galerie-hebergement .item-galerie
 {
     display: flex;
-    width: 300px;
+    width: 28%;
     height: 220px;
     background-color: white;
     margin: 1rem;
@@ -253,7 +253,6 @@ button[type="submit"]
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie
 {
-    width: 80%;
     margin-top: 0.5px;
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
@@ -298,7 +297,7 @@ button[type="submit"]
 }
 .item-galerie .texte-sous-la-photo-galerie
 {
-     margin-left: 1rem;
+     margin-left: 0.5rem;
 }
 aside
 {
