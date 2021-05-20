@@ -75,7 +75,6 @@ header nav a:hover
 {
     display: flex;
     align-items: center;
-    
 }
 input[type="text"]
 {
@@ -637,36 +636,56 @@ footer li :hover
     /***********************************MAIN******************************/
  .principale
     {
-    margin-left: 1rem;
-    }   
+        margin-left: 2rem;
+        margin-top: 2rem;
+    } 
+    .principale
+    {
+        margin-top: 2rem;
+    }
+    
  .principale h1
  {
-     font-size: 22px;
+     font-size: 30px;
+     width: 410px;
  }
- button[type="submit"]
- {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 14px;
-    border-bottom-left-radius: 14px;
-    overflow: hidden;
-    position: relative;
-    margin-left: -3rem;
-    width: 50px;
- }
- .principale .zone-recherche i.empty
- {
-     line-height: 42px;
-     overflow: hidden;
-     padding-left: 2rem;    
- }
+ .principale .zone-recherche
+    {
+        margin-top: 2.5rem;
+        width: 420px;
+        border-top: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
+    }
  input[type="text"]
- {
+{
+  
+   height: 75px;
    padding: 0 2rem; 
    font-size: 16px;
    color: black;
    font-weight: bold;
    font-size: 16px; 
+}
+.principale .map
+{
+    background: #f2f2f2;
+    height: 75px;
+    text-align: center;
+    line-height: 55px;
+    width: 160px;
+}
+ button[type="submit"]
+ {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 150px;
+    height: 75px;
+ }
+ .principale .zone-recherche i.empty
+ {
+     line-height: 72px;
+     padding-left: 2.5rem; 
+     font-size: 1rem;   
  }
  .principale .filtres .titre-filtre
  {
@@ -981,7 +1000,7 @@ footer .pied-page
 }
 .item-pied-page
 {
-    margin-right: 1rem;
+    margin-right: 4rem;
 }
 
 
