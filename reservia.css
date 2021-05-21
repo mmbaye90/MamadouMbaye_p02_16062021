@@ -652,41 +652,51 @@ footer li :hover
  .principale .zone-recherche
     {
         margin-top: 2.5rem;
-        width: 420px;
-        border-top: 1px solid #f2f2f2;
-        border-bottom: 1px solid #f2f2f2;
+        width: 470px;
+        height: 60px;
     }
  input[type="text"]
 {
   
-   height: 75px;
-   padding: 0 2rem; 
-   font-size: 16px;
+   height: 60px;
+   padding-left: 2rem; 
+   font-size: 18px;
    color: black;
    font-weight: bold;
-   font-size: 16px; 
+   
+   width: 370px;
+   border: 1px solid #f2f2f2;
+  
 }
 .principale .map
 {
     background: #f2f2f2;
-    height: 75px;
+    height: 60px;
     text-align: center;
-    line-height: 55px;
-    width: 160px;
+    line-height: 60px;
+    width:70px;
 }
  button[type="submit"]
  {
     border-radius: 16px;
     overflow: hidden;
-    width: 150px;
-    height: 75px;
+    width: 70px;
+    height: 60px;
+    margin-left: -4rem;
+    
  }
- .principale .zone-recherche i.empty
+ .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
  {
-     line-height: 72px;
+     line-height: 60px;
      padding-left: 2.5rem; 
      font-size: 1rem;   
  }
+    .principale .phrase-accroche
+    {
+        font-size: 1.5rem;
+        width: 450px;   /*pour respecter le rendu ou ce texte depasse le H1*/
+        margin-top: -0.3rem; /*pareil*/              
+    }
  .principale .filtres .titre-filtre
  {
      width: 50%;
