@@ -2,7 +2,7 @@
 	
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-*{font-family: 'Raleway-Regular', sans-serif;
+*{font-family: 'Raleway-Regular', sans-serif; 
     box-sizing: border-box;}
 body
 {
@@ -14,6 +14,7 @@ body
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+   
 }
 
 /********* Entête de la page *******/
@@ -98,7 +99,7 @@ input[type="text"]
 {
     color: black;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 button[type="submit"]
 {
@@ -593,46 +594,53 @@ footer li :hover
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
  {
      /********************************HEADER**************************/
-     header .logo
+     header
      {
-         margin-left: 1rem;
+         flex-wrap: wrap;
+         position: relative;
      }
      header nav
-    {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: inherit;
-    }
+     {
+         display: flex;
+         flex-wrap: nowrap;
+         width: 100%;
+     }
+
      header nav .sign-up
      {
-         order: 1;
-         margin-top: 2.3rem;
-         margin-left: 14rem;
+        position: absolute;
+        top: 1.4rem;
+        right: 0; 
+     }
+     header nav .sign-up a
+     {
+         padding: 0;
+         padding-right: 1rem;
      }
      header nav .conteneur-heb-act
      {
-         order: 2;
-         display: flex;
-         margin-left: -9rem;
+         display: flex;   
      }
      header nav .conteneur-heb-act .acti
      {
          border-bottom: #F2F2F2 solid 3px;
-     }
-     header nav .conteneur-heb-act .heb
+       
+     } 
+      header nav .conteneur-heb-act .heb
      {
          border-bottom: #0065FC solid 3px;
-     }
+         padding: 11px 55px;
+         margin-left: -2rem;
+     }  
+   
      header nav .conteneur-heb-act a
      {
-         padding: 20px 85px;
-         font-size: 18px;
-     }
+        padding: 11px 65px;
+     } 
      header nav a:hover
     {
     border-top: none;
-    }
+    } 
     /***********************************MAIN******************************/
  .principale
     {
@@ -651,7 +659,8 @@ footer li :hover
  }
  .principale .zone-recherche
     {
-        margin-top: 2.5rem;
+        margin-top: 1.7rem;
+        margin-left: -0.7rem;
         width: 470px;
         height: 60px;
     }
@@ -663,8 +672,7 @@ footer li :hover
    font-size: 18px;
    color: black;
    font-weight: bold;
-   
-   width: 370px;
+   width: 360px;
    border: 1px solid #f2f2f2;
   
 }
@@ -693,7 +701,7 @@ footer li :hover
  }
     .principale .phrase-accroche
     {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
         width: 450px;   /*pour respecter le rendu ou ce texte depasse le H1*/
         margin-top: -0.3rem; /*pareil*/              
     }
@@ -732,29 +740,33 @@ footer li :hover
  }
  #Hebergement
 {
-    margin-left: 0;
+    
     border-radius: inherit;
     background: white;  
 }
 .galerie-hebergement .item-galerie
 {
-    width: 385px;
+    width: 410px;
     height: 230px;
-    margin-left: -0.8rem;
+    margin-left: 2.45rem;
 }
 .galerie-hebergement .item-galerie img
 {
     width: 98%;
     height: 60%; 
 }
-
+#Hebergement h2
+{
+    margin-left: 1.9rem;
+}
  aside
  {
     border-radius: inherit;
+    margin-left: -0.5rem;
  }
  .bloc-galerie-aside .item-aside
  {
-     width: 395px;
+     width: 410px;
  }
  .bloc-galerie-aside .item-aside img
  {
@@ -766,14 +778,22 @@ footer li :hover
  }
  #activité .galerie-activité .item-galerie-activité-photo-unique
  {
-     width: 385px;
+     width: 410px;
      height: 245px;
-     margin: 0;
-     margin-right: -3rem;
+     margin-right: -5.7rem;
      margin-left: 3rem;
      order: 1;
      margin-top: 1rem;
      margin-bottom: 1rem;
+     
+ }
+ #activité .galerie-activité .item-parent-galerie-activité-photo-double
+ {
+    margin: 0;
+     
+    margin-bottom: 2rem;
+    margin-top: 2rem; 
+    order: 2; 
  }
  #activité .galerie-activité .item-galerie-activité-photo-unique img
  {
@@ -783,9 +803,10 @@ footer li :hover
  }
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
  {
-     width: 380px;
+     width: 410px;
      height: 245px;
      margin-top: -1rem;
+    
      margin-bottom: 1.5rem;
  }
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue img
@@ -796,7 +817,8 @@ footer li :hover
  }
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
  {
-     width: 380px;
+     width: 410px;
+    
      height: 245px;
  }
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img
@@ -807,7 +829,8 @@ footer li :hover
  }
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
  {
-     width: 380px;
+     width: 410px;
+    
      height: 245px;
      margin-top: -1rem;
      margin-bottom: 1.5rem;
@@ -820,7 +843,8 @@ footer li :hover
  }
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
  {
-     width: 380px;
+     width: 410px;
+    
      height: 245px;
  }
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img
@@ -829,15 +853,7 @@ footer li :hover
      object-fit: cover;
      height: 174px;
  }
- #activité .galerie-activité .item-parent-galerie-activité-photo-double
- {
-    margin: 0;
-    margin-right: -3rem;
-    margin-left: 3rem; 
-    margin-bottom: 2rem;
-    margin-top: 2rem; 
-    order: 2; 
- }
+
  #activité .galerie-activité .deuxieme  /*Ciblage deuxieme photo double pour le decaler du footer*/
  {
      margin-bottom: 4rem;
@@ -878,13 +894,14 @@ footer
          margin-top: 0.7rem;
          margin-left: 0;
          order: 2;
+         margin-top: 0.7rem;
      }
      header nav .conteneur-heb-act
      {
          display: flex;
          margin-left: 0;
          order: 1;
-         margin-top: -10px;
+         margin-top: -9px;
      }
      header nav .conteneur-heb-act .acti
      {
