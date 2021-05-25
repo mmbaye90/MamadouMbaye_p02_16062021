@@ -615,16 +615,16 @@ footer li :hover
      header nav .sign-up a
      {
          padding: 0;
-         padding-right: 1rem;
+         margin-right: 1rem;
      }
      header nav .conteneur-heb-act
      {
-         display: flex;   
+         display: flex; 
      }
      header nav .conteneur-heb-act .acti
      {
          border-bottom: #F2F2F2 solid 3px;
-       
+         padding: 11px 65px;
      } 
       header nav .conteneur-heb-act .heb
      {
@@ -633,82 +633,50 @@ footer li :hover
          margin-left: -2rem;
      }  
    
-     header nav .conteneur-heb-act a
+     header nav .conteneur-heb-act.a 
      {
-        padding: 11px 65px;
+        
      } 
      header nav a:hover
     {
     border-top: none;
     } 
     /***********************************MAIN******************************/
- .principale
-    {
-        margin-left: 2rem;
-        margin-top: 2rem;
-    } 
-    .principale
-    {
-        margin-top: 2rem;
-    }
-    
- .principale h1
- {
-     font-size: 30px;
-     width: 410px;
+
+ .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
+  {
+     line-height: 60px;
+     padding-left: 2rem; 
+     font-size: 1rem;   
  }
- .principale .zone-recherche
-    {
-        margin-top: 1.7rem;
-        margin-left: -0.7rem;
-        width: 470px;
-        height: 60px;
-    }
- input[type="text"]
-{
-  
-   height: 60px;
-   padding-left: 2rem; 
-   font-size: 18px;
-   color: black;
-   font-weight: bold;
-   width: 360px;
-   border: 1px solid #f2f2f2;
-  
-}
-.principale .map
-{
-    background: #f2f2f2;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    width:70px;
-}
  button[type="submit"]
  {
     border-radius: 16px;
     overflow: hidden;
-    width: 70px;
-    height: 60px;
-    margin-left: -4rem;
-    
+    width: 55px;
+    height: 55px;
  }
- .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
- {
-     line-height: 60px;
-     padding-left: 2.5rem; 
-     font-size: 1rem;   
- }
-    .principale .phrase-accroche
-    {
-        font-size: 1.45rem;
-        width: 450px;   /*pour respecter le rendu ou ce texte depasse le H1*/
-        margin-top: -0.3rem; /*pareil*/              
-    }
- .principale .filtres .titre-filtre
- {
-     width: 50%;
- }
+ .principale .map
+{
+    background: #f2f2f2;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    width:55px;
+}
+input[type="text"]
+{
+  
+   height: 55px;
+   font-size: 18px;
+   color: black;
+   font-weight: bold;
+   border: 1px solid #f2f2f2;
+}
+  
+
+
+
  .principale .filtres .item-filtre
  {
      margin-bottom: 1rem;
@@ -732,7 +700,11 @@ footer li :hover
     font-size: 14px;
     color: gray;
     margin-top: 10px;
- }
+ }  */
+
+ 
+
+
  .partie-centrale
  {
      display: flex;
