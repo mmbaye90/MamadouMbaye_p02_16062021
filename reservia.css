@@ -583,7 +583,7 @@ footer li :hover
 }
 
 
-/*********************PARTIE RESPONSIVE : MOBILE ***************************/
+/*********************PARTIE RESPONSIVE : MOBILE: 375 ***************************/
 
 
 
@@ -591,9 +591,9 @@ footer li :hover
 
 
 /* @media all and (max-width:600px) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+@media all and (max-width : 375px) 
  {
-     /********************************HEADER**************************/
+     
      header
      {
          flex-wrap: wrap;
@@ -837,162 +837,126 @@ footer .pied-page
     margin-right: 2rem;
 }
 
-/********************PARTIE RESPONSIVE : TABLETTE*******************/
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+/*******************PARTIE RESPONSIVE MOBILE :320***************************/
+@media all and (max-width : 320px) 
 {
-    header nav
-    {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: inherit;
-        background: red;
-    }
-    header nav .sign-up
+    button[type="submit"]
+ {
+    margin-left: -3rem;
+ }
+    header nav .conteneur-heb-act .acti
      {
-         margin-top: 0.7rem;
-         margin-left: 0;
-         order: 2;
-         margin-top: 0.7rem;
-     }
-     header nav .conteneur-heb-act
+         border-bottom: #F2F2F2 solid 3px;
+         padding: 11px 42px;
+     } 
+      header nav .conteneur-heb-act .heb
      {
-         display: flex;
-         margin-left: 0;
-         order: 1;
-         margin-top: -9px;
-     }
-     header nav .conteneur-heb-act .acti
+         border-bottom: #0065FC solid 3px;
+         padding: 11px 45px;
+         margin-left: -2rem;
+     }  
+     .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
      {
-         border-bottom: none;
-     }
-     header nav .conteneur-heb-act .heb
-     {
-         border-bottom: none;
-     }
-     header nav .conteneur-heb-act a
-     {
-         padding: 11px 40px;
-     }
-     header .logo
-     {
-        margin-left: 1rem;
-        margin-top: 0.5rem;
-     }
-     header nav .sign-up
-    {
-        margin-top: -10px;
+        line-height: 55px; 
     }
 
-
-
-     .principale
-     {
-         margin-left: 1rem;
-     }
-     .principale .titre-filtre
-     {
-         width: 100%;
-     }
-     .principale .ensemble .item-filtre
-     {
-         margin-right: 0.6rem;
-     }
-     .principale .logo-info-texte .logo
-    {
-        margin-top: -2px;
-    }
-    .partie-centrale
-    {
-        flex-direction: column-reverse;
-    }
-    aside
+ aside
+ {
+    border-radius: inherit;
+    margin-left: -0.6rem;
+    margin-right: -0.6rem;
+ } 
+ .galerie-hebergement
+ {
+     margin-left: 1.3rem;
+ }
+ .galerie-hebergement .item-galerie
 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+    width: 250px;
+} 
+#activité .galerie-activité 
+{
+    margin: 0px 0px 0px;
 }
-.bloc-galerie-aside
+#activité .galerie-activité .item-galerie-activité-photo-unique
 {
-    flex-direction: row;
-    margin-top: -2rem;
+    width: 250px;
+    margin-left: 1.7rem;
 }
-.bloc-galerie-aside .item-aside
+#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
 {
-    width: 200px;
-    border-radius: 20px;
-    height: 255px;
+    width: 250px;
+    margin-left: 1.7rem;
+} 
+#activité .galerie-activité .premiere
+{
+    margin-right: 0;
 }
-.bloc-galerie-aside .item-aside img
+
+ #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
+{
+    width: 250px;
+    margin-left: 1.7rem;
+} 
+ 
+ #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
+{
+    width: 250px;
+    margin-left: 1.7rem;
+} 
+
+ #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
+{
+    width: 250px;
+    margin-left: 1.7rem;
+}
+.filtres .titre-filtre
 {
     width: 100%;
-    height: 130px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 20px;
-    padding: 0.40rem;
-}
-.bloc-galerie-aside .item-aside a
+} 
+.filtres .eco-et-fam
 {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    text-decoration: none;
 }
-.bloc-galerie-aside a .texte-sous-la-photo-aside .dernierphrase
-{
-    margin-top: 20px;
-}
-.bloc-galerie-aside a .texte-sous-la-photo-aside .icone-etoile
-{
-    margin-top: 25px;
-}
-.bloc-galerie-aside a .texte-sous-la-photo-aside .derniericone
-{
-    margin-top: 27px;
-}
-
-
-#Hebergement
-{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.galerie-hebergement
-{
-    padding-left: 1.4rem;
-}
-
-   
-
-#activité .galerie-activité
+.principale .filtres .ensemble .sous-ensemble
 {
     margin-left: 1rem;
 }
-#activité .galerie-activité .item-parent-galerie-activité-photo-double
+.partie-centrale
 {
-    margin-right: -3rem;
+    margin-left: -1rem;
 }
 
-
-
-footer ul
+footer
 {
-    width: 15rem;
-    list-style-type: none;
-    margin-left: -1.2rem;
-    
+    background:#F2F2F2 ;
+    display: flex;
 }
 footer .pied-page
 {
-    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 240px;
+    margin-right: 0;
 }
-.item-pied-page
+footer .pied-page .item-pied-page
 {
-    margin-right: 4rem;
+    width: 240px;
+}
+footer .pied-page ul
+{
+    width: 240px;
 }
 
-}
 
-/*******************PARTIE RESPONSIVE HORS TAB***************************/
+
+}
+/*********************                     ******************************/
+@media (max-width: 925px) and (min-width: 650px){
+    header nav
+    {
+        background: chartreuse;
+    }
+}
