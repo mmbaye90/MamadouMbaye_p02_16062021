@@ -35,17 +35,17 @@ header nav
 }
 header nav a
 {
-    padding: 11px 40px;
+    padding: 0.68rem 2.5rem;
 }
 header nav .conteneur-heb-act
 {
-    margin-top: 14px;  
+    margin-top: 0.88rem;  
 }
 header nav .conteneur-heb-act a
 {
     text-decoration: none;
     color: #0065FC;
-    font-size: 16px;
+    font-size: 1rem;
 }
 header nav .conteneur-heb-act .acti
 {
@@ -53,7 +53,7 @@ header nav .conteneur-heb-act .acti
 }
 header nav .sign-up
 {
-    margin-top: 14px;  
+    margin-top: 0.88rem;  
 }
 header nav .sign-up a
 {
@@ -80,15 +80,15 @@ header nav a:hover
 input[type="text"]
 {
    border: 1px solid #f2f2f2;
-   height: 45px;
+   height: 2.81rem;
 }
 .principale .map
 {
     background: #f2f2f2;
-    width: 40px;
-    height: 45px;
+    width: 2.5rem;
+    height: 2.81rem;
     text-align: center;
-    line-height: 45px;
+    line-height: 2.81rem;
     border-radius: 1rem 0 0 1rem;
 }
 input[type="text"]
@@ -99,11 +99,11 @@ input[type="text"]
 {
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.13rem;
 }
 button[type="submit"]
 {
-    height: 45px;
+    height: 2.81rem;
     background: #0065FC;
     color: white;
     border: none;
@@ -138,9 +138,9 @@ button[type="submit"]
     display: flex;
     border: 2.8px solid #F2F2F2;
     align-items: center;
-    height: 40px;
+    height: 2.5rem;
     margin-right: 2.5rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 .principale .filtres .ensemble
 {
@@ -162,9 +162,9 @@ button[type="submit"]
 {
     background: #DEEBFF;
     margin-left: -0.5rem;
-    height: 40px;
+    height: 2.5rem;
     color: #0065FC;
-    width: 40px;
+    width: 2.5rem;
     border-radius: 100%;
     text-align: center;
 }
@@ -179,7 +179,7 @@ button[type="submit"]
 .principale .filtres .icone i
 {
     color: #0065FC;
-    line-height: 40px;
+    line-height: 2.5rem;
 }
 
 
@@ -194,15 +194,15 @@ button[type="submit"]
 {
     border: 1.7px solid #F2F2F2;
     margin-right: 0.5rem;
-    width: 25px;
-    height: 25px;
+    width: 1.56rem;
+    height: 1.56rem;
     border-radius: 100%;
     text-align: center;
 }
 .principale .logo i
 {
     color: #0065FC;
-    font-size: 10px;
+    font-size: 0.63rem;
 }
 /**************Partie Centrale************/
 .partie-centrale
@@ -215,9 +215,7 @@ button[type="submit"]
 {
     background: #f2f2f2;
     border-radius: 1.5rem;
-    /* width: 970px; */
     margin-right: 3rem;
-   
 }
 #Hebergement h2
 {
@@ -234,10 +232,10 @@ button[type="submit"]
 {
     display: flex;
     width: 28%;
-    height: 220px;
+    height: 13.75rem;
     background-color: white;
     margin: 1rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     box-shadow: 0 0 20px #0000002e; 
 }
 .galerie-hebergement .item-galerie img
@@ -253,23 +251,23 @@ button[type="submit"]
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie
 {
-    margin-top: 0.5px;
+    margin-top: 0.03rem;
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
 {
-    margin-top: 0.5px;
-    font-size: 15px;
+    margin-top: 0.03rem;
+    font: size 0.94rem;;
     font-weight: bold;
 }
 
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p
 {
-    margin-top: -6px;
+    margin-top: -0.38rem;
     color: gray;  
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile
 {
-    margin-top: -6px;
+    margin-top: -0.38rem;
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i
 {
@@ -322,15 +320,15 @@ aside h2
 {
     margin: 1rem;
     background-color: white;
-    width: 320px;
+    width: 20rem;
     border-radius: 20px;
     box-shadow: 0 0 20px #0000002e;
-    height: 130px;
+    height: 8.13rem;
 }
 .bloc-galerie-aside .item-aside img
 {
     width: 35%;
-    height: 130px;
+    height: 8.13rem;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -346,26 +344,26 @@ aside h2
 .bloc-galerie-aside a .texte-sous-la-photo-aside
 {
     margin-left: 1rem;
-    width: 150px;
+    width: 9.36rem;
     height: auto;
 }
 .bloc-galerie-aside a .texte-sous-la-photo-aside h3
 {
-    font-size: 15px;
+    font-size: 0.94rem;
     color: black;  
 }
 .bloc-galerie-aside a .texte-sous-la-photo-aside p
 {
-    margin-top: -10px;
+    margin-top: -0.63rem;
     color: gray;  
 }
 .bloc-galerie-aside a .texte-sous-la-photo-aside .icone-etoile
 {
-    margin-top: 25px;
+    margin-top: 1.56rem;
 }
 .bloc-galerie-aside a .texte-sous-la-photo-aside .derniericone
 {
-    margin-top: 45px;
+    margin-top: 2.81rem;
 }
 .bloc-galerie-aside a .texte-sous-la-photo-aside i
 {
@@ -392,8 +390,8 @@ aside h2
 #activité .galerie-activité .item-galerie-activité-photo-unique
 {
     border-radius: 20px;
-    width: 305px;
-    height: 440px;
+    width: 19.06rem;
+    height: 27.5rem;
     box-shadow: 0 0 16px #0000002e;
     margin-right: 5.7rem;
     margin-top: 2rem;
@@ -408,8 +406,8 @@ aside h2
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 305px;
-    height: 440px;
+    width: 19.06rem;
+    height: 27.5rem;
     justify-content: space-between;
     margin-top: 2rem;
 }
@@ -417,7 +415,7 @@ aside h2
 {
     width: 100%;
     object-fit: cover;
-    height: 392px;
+    height: 24.5rem;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -427,7 +425,7 @@ aside h2
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique a p
 {
-    width: 250px;
+    width: 15.62rem;
     padding-left: 1rem;
     margin-top: 0.7rem;
     color: black;
@@ -436,7 +434,7 @@ aside h2
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
 {
     border-radius: 20px;
-    height: 230px;
+    height: 14.36rem;
     box-shadow: 0 0 16px #0000002e;
 }
 
@@ -444,7 +442,7 @@ aside h2
 {
   object-fit: cover;
   width: 100%;
-  height: 180px;
+  height: 11.25rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -462,7 +460,7 @@ aside h2
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
 {
     border-radius: 20px;
-    height: 170px;
+    height: 10.63rem;
     box-shadow: 0 0 20px #0000002e;
 }
 
@@ -470,7 +468,7 @@ aside h2
 {
     object-fit: cover;
     width: 100%;
-    height: 124px;
+    height: 7.75rem;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;   
 }
@@ -488,7 +486,7 @@ aside h2
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
 {
     border-radius: 20px; 
-    height: 180px;
+    height: 11.25rem;
     box-shadow: 0 0 20px #0000002e;
 }
 
@@ -496,7 +494,7 @@ aside h2
 {
     object-fit: cover;
     width: 100%;
-    height: 135px;
+    height: 8.44rem;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;   
 }
@@ -514,7 +512,7 @@ aside h2
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
 {
     border-radius: 20px;
-    height: 220px; 
+    height: 13.75rem; 
     box-shadow: 0 0 20px #0000002e; 
 }
 
@@ -522,7 +520,7 @@ aside h2
 {
   object-fit: cover;
   width: 100%;
-  height: 174px;
+  height: 10.88rem;;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;  
 }
@@ -613,7 +611,7 @@ footer li :hover
          display: flex;
          margin-left: 0;
          order: 1;
-         margin-top: -9px;
+         margin-top: -0.56rem;
      }
      header nav .conteneur-heb-act .acti
      {
@@ -634,7 +632,7 @@ footer li :hover
      }
      header nav .sign-up
     {
-        margin-top: -10px;
+        margin-top: -0.63rem;
     }
 
 
@@ -653,7 +651,7 @@ footer li :hover
      }
      .principale .logo-info-texte .logo
     {
-        margin-top: -2px;
+        margin-top: -0.13rem;
     }
     .partie-centrale
     {
@@ -672,14 +670,14 @@ footer li :hover
 }
 .bloc-galerie-aside .item-aside
 {
-    width: 200px;
+    width: 12.5rem;
     border-radius: 20px;
-    height: 255px;
+    height: 15.94rem;;
 }
 .bloc-galerie-aside .item-aside img
 {
     width: 100%;
-    height: 130px;
+    height: 8.13rem;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 0;
     border-top-right-radius: 20px;
@@ -694,15 +692,15 @@ footer li :hover
 }
 .bloc-galerie-aside a .texte-sous-la-photo-aside .dernierphrase
 {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .bloc-galerie-aside a .texte-sous-la-photo-aside .icone-etoile
 {
-    margin-top: 25px;
+    margin-top: 1.56rem;
 }
 .bloc-galerie-aside a .texte-sous-la-photo-aside .derniericone
 {
-    margin-top: 27px;
+    margin-top: 1.69rem;
 }
 
 
@@ -788,12 +786,12 @@ footer .pied-page
      header nav .conteneur-heb-act .acti
      {
          border-bottom: #F2F2F2 solid 3px;
-         padding: 11px 65px;
+         padding: 0.69rem 4.06rem;
      } 
       header nav .conteneur-heb-act .heb
      {
          border-bottom: #0065FC solid 3px;
-         padding: 11px 55px;
+         padding: 0.69rem 3.44rem;
          margin-left: -2rem;
      }  
    
@@ -809,7 +807,7 @@ footer .pied-page
 
  .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
   {
-     line-height: 60px;
+     line-height: 3.75rem;
      padding-left: 2rem; 
      font-size: 1rem;   
  }
@@ -817,22 +815,22 @@ footer .pied-page
  {
     border-radius: 16px;
     overflow: hidden;
-    width: 55px;
-    height: 55px;
+    width: 3.44rem;
+    height: 3.44rem;
  }
  .principale .map
 {
     background: #f2f2f2;
-    height: 55px;
+    height: 3.44rem;
     text-align: center;
-    line-height: 55px;
+    line-height: 3.44rem;
     width:55px;
 }
 input[type="text"]
 {
   
-   height: 55px;
-   font-size: 18px;
+   height: 3.44rem;
+   font-size: 1.13rem;
    color: black;
    font-weight: bold;
    border: 1px solid #f2f2f2;
@@ -858,9 +856,9 @@ input[type="text"]
  }
  .principale .logo-info-texte p
  {
-    font-size: 14px;
+    font-size: 0.88rem;
     color: gray;
-    margin-top: 10px;
+    margin-top: 0.63rem;
  }  
 
  
@@ -878,8 +876,8 @@ input[type="text"]
 }
 .galerie-hebergement .item-galerie
 {
-    width: 315px;
-    height: 230px;
+    width: 19.69rem;
+    height: 14.38rem;
     margin: 0;
     margin-left: 1.35rem;
     margin-top: 1.5rem;
@@ -904,26 +902,23 @@ input[type="text"]
 
  #activité .galerie-activité .item-galerie-activité-photo-unique
  {
-     width: 315px;
-     height: 230px;
+     width: 19.69rem;
+     height: 14.38rem;
      margin-right: -5.7rem;
      margin-left: 1.3rem;
      margin-bottom: 2rem; 
  } 
- #activité .galerie-activité .item-parent-galerie-activité-photo-double
- {
-   
- } 
+
   #activité .galerie-activité .item-galerie-activité-photo-unique img
  {
      width: 100%;
      object-fit: cover;
-     height: 174px;
+     height: 10.88rem;
  } 
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
  {
-     width: 315px;
-     height: 230px;
+     width: 19.69rem;
+     height: 14.38rem;;
      margin-left: 1.3rem;
      margin-top: -2rem;
      margin-bottom: 2rem;
@@ -931,20 +926,20 @@ input[type="text"]
 
   #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
  {
-    width: 315px;
-    height: 230px;
+    width: 19.69rem;
+    height: 14.38rem;
     margin-left: 1.3rem;
  } 
   #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img
  {
      width: 100%;
      object-fit: cover;
-     height: 174px;
+     height: 10.88rem;
  }  
   #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
  {
-     width: 315px;
-     height: 230px;
+     width: 19.69rem;
+     height: 14.38rem;
      margin-left: 1.3rem;
      margin-top: -2rem;
      margin-bottom: 2rem;
@@ -953,19 +948,19 @@ input[type="text"]
  {
      width: 100%;
      object-fit: cover;
-     height: 174px;
+     height: 10.88rem;
  } 
   #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
  {
-     width: 315px;
-     height: 230px;
+     width: 19.69rem;
+     height: 14.38rem;
      margin-left: 1.3rem;
  } 
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img
  {
      width: 100%;
      object-fit: cover;
-     height: 174px;
+     height: 10.88rem;
  } 
 
  #activité .galerie-activité .deuxieme  /*Ciblage deuxieme photo double pour le decaler du footer*/
@@ -1010,17 +1005,17 @@ footer .pied-page
     header nav .conteneur-heb-act .acti
      {
          border-bottom: #F2F2F2 solid 3px;
-         padding: 11px 42px;
+         padding: 0.69rem 2.63rem;
      } 
       header nav .conteneur-heb-act .heb
      {
          border-bottom: #0065FC solid 3px;
-         padding: 11px 45px;
+         padding: 0.69rem 2.81rem;
          margin-left: -2rem;
      }  
      .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
      {
-        line-height: 55px; 
+        line-height: 3.44rem; 
     }
 
  aside
@@ -1035,7 +1030,7 @@ footer .pied-page
  }
  .galerie-hebergement .item-galerie
 {
-    width: 250px;
+    width: 15.63rem;
 } 
 #activité .galerie-activité 
 {
@@ -1043,12 +1038,12 @@ footer .pied-page
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique
 {
-    width: 250px;
+    width: 15.63rem;
     margin-left: 1.7rem;
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
 {
-    width: 250px;
+    width: 15.63rem;
     margin-left: 1.7rem;
 } 
 #activité .galerie-activité .premiere
@@ -1058,19 +1053,19 @@ footer .pied-page
 
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
 {
-    width: 250px;
+    width: 15.63rem;
     margin-left: 1.7rem;
 } 
 
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
 {
-    width: 250px;
+    width: 15.63rem;
     margin-left: 1.7rem;
 } 
 
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
 {
-    width: 250px;
+    width: 15.63rem;
     margin-left: 1.7rem;
 }
 .filtres .titre-filtre
@@ -1100,22 +1095,18 @@ footer .pied-page
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
-    width: 240px;
+    width: 15rem;
     margin-right: 0;
 }
 footer .pied-page .item-pied-page
 {
-    width: 240px;
+    width: 15rem;
 }
 footer .pied-page ul
 {
-    width: 240px;
+    width: 15rem;
 }
 
 
 
 }
-
-
-
-/*********************                     ******************************/
