@@ -581,7 +581,162 @@ footer li :hover
 {
     color: blue;
 }
+/********************Partie Tablette********************************************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+{
+    header nav
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: inherit;
+        
+    }
+    header nav .sign-up
+     {
+         margin-top: 0.7rem;
+         margin-left: 0;
+         order: 2;
+         margin-top: 0.7rem;
+     }
+     header nav .conteneur-heb-act
+     {
+         display: flex;
+         margin-left: 0;
+         order: 1;
+         margin-top: -9px;
+     }
+     header nav .conteneur-heb-act .acti
+     {
+         border-bottom: none;
+     }
+     header nav .conteneur-heb-act .heb
+     {
+         border-bottom: none;
+     }
+     header nav .conteneur-heb-act a
+     {
+         padding: 11px 40px;
+     }
+     header .logo
+     {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+     }
+     header nav .sign-up
+    {
+        margin-top: -10px;
+    }
 
+
+
+     .principale
+     {
+         margin-left: 1rem;
+     }
+     .principale .titre-filtre
+     {
+         width: 100%;
+     }
+     .principale .ensemble .item-filtre
+     {
+         margin-right: 0.6rem;
+     }
+     .principale .logo-info-texte .logo
+    {
+        margin-top: -2px;
+    }
+    .partie-centrale
+    {
+        flex-direction: column-reverse;
+    }
+    aside
+{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+.bloc-galerie-aside
+{
+    flex-direction: row;
+    margin-top: -2rem;
+}
+.bloc-galerie-aside .item-aside
+{
+    width: 200px;
+    border-radius: 20px;
+    height: 255px;
+}
+.bloc-galerie-aside .item-aside img
+{
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    padding: 0.40rem;
+}
+.bloc-galerie-aside .item-aside a
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+}
+.bloc-galerie-aside a .texte-sous-la-photo-aside .dernierphrase
+{
+    margin-top: 20px;
+}
+.bloc-galerie-aside a .texte-sous-la-photo-aside .icone-etoile
+{
+    margin-top: 25px;
+}
+.bloc-galerie-aside a .texte-sous-la-photo-aside .derniericone
+{
+    margin-top: 27px;
+}
+
+
+#Hebergement
+{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.galerie-hebergement
+{
+    padding-left: 1.4rem;
+}
+
+
+
+#activité .galerie-activité
+{
+    margin-left: 1rem;
+}
+#activité .galerie-activité .item-parent-galerie-activité-photo-double
+{
+    margin-right: -3rem;
+}
+
+
+
+footer ul
+{
+    width: 12rem;
+    list-style-type: none;
+    margin-left: -1.2rem;
+
+}
+footer .pied-page
+{
+    margin-left: 1rem;
+}
+.item-pied-page
+{
+    margin-right: 4rem;
+}
+
+}
 
 /*********************PARTIE RESPONSIVE : MOBILE: 375 ***************************/
 
@@ -836,9 +991,7 @@ footer .pied-page
 {
     margin-right: 2rem;
 }
-
-
-/*******************PARTIE RESPONSIVE MOBILE :320***************************/
+/******************Partie Mobile 425***************************/
 @media all and (max-width : 320px) 
 {
     button[type="submit"]
@@ -899,7 +1052,7 @@ footer .pied-page
     width: 250px;
     margin-left: 1.7rem;
 } 
- 
+
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
 {
     width: 250px;
@@ -953,10 +1106,7 @@ footer .pied-page ul
 
 
 }
+
+
+
 /*********************                     ******************************/
-@media (max-width: 925px) and (min-width: 650px){
-    header nav
-    {
-        background: chartreuse;
-    }
-}
