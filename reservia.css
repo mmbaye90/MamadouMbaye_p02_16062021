@@ -580,12 +580,17 @@ footer li :hover
     color: blue;
 }
 /********************SUP à TABlette ********************************************/
-@media all and (max-width : 1200px)
+@media all and (max-width : 1300px)
 {
     .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .cannebierre
     {
        margin-left: -0.4rem;
+       font-size: 1rem;
     } 
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
+    {
+        font-size: 1rem;
+    }
   
 } 
 /********************Partie Tablette********************************************/
@@ -714,7 +719,11 @@ footer li :hover
     padding-left: 1.4rem;
 }
 
+.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
+{
 
+   font-size: 1rem;
+} 
 
 #activité .galerie-activité
 {
