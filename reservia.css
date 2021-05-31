@@ -211,7 +211,6 @@ button[type="submit"]
 .partie-centrale
 {
     display: flex;
-    /* justify-content: space-between; */
     margin-top: 1rem;
 }
 #Hebergement
@@ -247,33 +246,26 @@ button[type="submit"]
 .galerie-hebergement .item-galerie img
 {
     width: 100%;
-    /* margin: 0.31rem; */
     height: 55%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    /* padding: 0.18rem; */
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
+
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie
 {
-    margin-top: 0.03rem;
-}
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
-{
-    margin-top: 0.03rem;
-    font: size 0.94rem;;
-    font-weight: bold;
+    margin-left: 0.5rem;    /*décale l'ensemble du texte de la gauche:conformité au rendu*/
+    line-height: 0.03rem;   /*permet d'éviter le depassement du texte de son conteneur*/
 }
 
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p
 {
-    margin-top: -0.38rem;
-    color: gray;  
+    margin-top: 1.5rem;    
+    color: gray;         
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile
 {
-    margin-top: -0.38rem;
+    margin-top: 1rem;   /*permet aussi d'espacer le texte*/
 }
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i
 {
@@ -294,15 +286,6 @@ button[type="submit"]
     text-decoration: none;
 }
 
-.item-galerie a
-{
-    text-decoration: none;
-    color: black;
-}
-.item-galerie .texte-sous-la-photo-galerie
-{
-     margin-left: 0.5rem;
-}
 aside
 {
     background: #f2f2f2;
@@ -314,68 +297,68 @@ aside h2
     width: 80%;
     margin-left: 1.87rem;
 }
-
 .bloc-galerie-aside
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem;            /* permet elargir le width de aside*/
 }
 .bloc-galerie-aside .item-aside
 {
+    display: flex;
+    flex-direction: row;
     margin: 1rem;
     background-color: white;
     width: 20rem;
     border-radius: 20px;
     box-shadow: 0 0 20px #0000002e;
     height: 8.13rem;
+    padding: 0.20rem;
+    text-decoration: none;
+    position: relative;
 }
 .bloc-galerie-aside .item-aside img
 {
+    display: block;
     width: 35%;
-    height: 8.13rem;
+    height: 7.7rem;         /*dimensionnement iùage dans le bloc*/
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding: 0.40rem;
+    
 }
-.bloc-galerie-aside .item-aside a
+/* .bloc-galerie-aside .item-aside a
 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3.12rem;
     text-decoration: none;
-}
-.bloc-galerie-aside a .texte-sous-la-photo-aside
+} */
+.bloc-galerie-aside  .texte-sous-la-photo-aside
 {
     margin-left: 1rem;
     width: 9.36rem;
-    height: auto;
+    color: black;
 }
-.bloc-galerie-aside a .texte-sous-la-photo-aside h3
+.bloc-galerie-aside  .texte-sous-la-photo-aside h3
 {
     font-size: 0.94rem;
-    color: black;  
+    line-height: -6.5rem;
 }
-.bloc-galerie-aside a .texte-sous-la-photo-aside p
+.bloc-galerie-aside .texte-sous-la-photo-aside .last-stars-aside
 {
-    margin-top: -0.63rem;
+    margin-top: 2rem;
+}
+.bloc-galerie-aside .texte-sous-la-photo-aside p
+{
     color: gray;  
 }
-.bloc-galerie-aside a .texte-sous-la-photo-aside .icone-etoile
-{
-    margin-top: 1.56rem;
-}
-.bloc-galerie-aside a .texte-sous-la-photo-aside .derniericone
-{
-    margin-top: 2.81rem;
-}
-.bloc-galerie-aside a .texte-sous-la-photo-aside i
+.bloc-galerie-aside .texte-sous-la-photo-aside i
 {
     color: #0065FC;
 }
-.bloc-galerie-aside a .texte-sous-la-photo-aside i.filled
+.bloc-galerie-aside  .texte-sous-la-photo-aside i.filled
 {
     color:#F2F2F2 ;
 }
@@ -588,15 +571,18 @@ footer li :hover
 /********************SUP à TABlette ********************************************/
 @media all and (max-width : 1355px)
 {
-    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
-    {
-       font-size: 1rem;
-       color: #0065FC;
-    } 
+    .galerie-hebergement
+{
+    justify-content: inherit;
+}
+.galerie-hebergement .item-galerie
+{
+    width: 43%;
+}
   
 } 
 /********************Partie Tablette********************************************/
-@media only screen and (min-width : 768px) and (max-width : 1024px)
+@media only screen and (min-width : 768px) and (max-width : 1065px)
 {
     header nav
     {
