@@ -81,6 +81,9 @@ input[type="text"]
 {
    border: 1px solid #f2f2f2;
    height: 2.81rem;
+   font-size: 1.13rem;
+   color: black;
+   font-weight: bold;
 }
 .principale .map
 {
@@ -230,22 +233,25 @@ button[type="submit"]
 }
 .galerie-hebergement .item-galerie
 {
-    display: flex;
+    display: block;
     width: 28%;
     height: 13.75rem;
     background-color: white;
     margin: 1rem;
     border-radius: 1.25rem;
     box-shadow: 0 0 20px #0000002e; 
+    padding: 0.30rem;
+    text-decoration: none;
+    color: black;
 }
 .galerie-hebergement .item-galerie img
 {
-    width: 96%;
-    margin: 0.31rem;
+    width: 100%;
+    /* margin: 0.31rem; */
     height: 55%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 0.18rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    /* padding: 0.18rem; */
     object-fit: cover;
     
 }
@@ -580,21 +586,17 @@ footer li :hover
     color: blue;
 }
 /********************SUP à TABlette ********************************************/
-@media all and (max-width : 1300px)
+@media all and (max-width : 1355px)
 {
-    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .cannebierre
-    {
-       margin-left: -0.4rem;
-       font-size: 1rem;
-    } 
     .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
     {
-        font-size: 1rem;
-    }
+       font-size: 1rem;
+       color: #0065FC;
+    } 
   
 } 
 /********************Partie Tablette********************************************/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+@media only screen and (min-width : 768px) and (max-width : 1024px)
 {
     header nav
     {
@@ -843,6 +845,8 @@ input[type="text"]
    color: black;
    font-weight: bold;
    border: 1px solid #f2f2f2;
+   border-top-right-radius: 1rem;
+   border-bottom-right-radius: 1rem;
 }
   
 .principale .filtres .item-filtre
@@ -1024,7 +1028,8 @@ footer .pied-page
      }  
      .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
      {
-        line-height: 3.44rem; 
+        /* line-height: 3.44rem;  */
+        text-align: center;
     }
 
  aside
