@@ -1,1032 +1,580 @@
 /*fonts pour le site*/
-    
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-*{font-family: 'Raleway-Regular', sans-serif; 
-    box-sizing: border-box;}
-body
-{
+* {
+    font-family: 'Raleway-Regular', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
     padding: 0;
     margin: 0;
 }
-#blocpage
-{
+
+#blocpage {
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-   
+    margin: auto;
 }
 
+
 /********* Entête de la page *******/
-header
-{
+
+header {
     display: flex;
-    
 }
-header .logo
-{
+
+header .logo {
     flex: 1;
     margin-top: 1.2rem;
-} 
-header nav
-{
+}
+
+header nav {
     display: flex;
     flex-wrap: wrap;
 }
-header nav a
-{
+
+header nav a {
     padding: 0.68rem 2.5rem;
-}
-header nav .conteneur-heb-act
-{
-    margin-top: 0.88rem;  
-}
-header nav .conteneur-heb-act a
-{
     text-decoration: none;
     color: #0065FC;
     font-size: 1rem;
 }
-header nav .conteneur-heb-act .acti
-{
+
+header nav .conteneur-hebergement-activite .activites {
     color: gray;
 }
-header nav .sign-up
-{
-    margin-top: 0.88rem;  
-}
-header nav .sign-up a
-{
-    text-decoration: none;
+
+header nav .sign-up a {
     color: #0065FC;
     font-weight: bold;
 }
-header nav a:hover
-{
+
+
+/*Permet de décaler les deux blocs du haut du page pourle border*/
+
+header nav .sign-up {
+    margin-top: 0.88rem;
+}
+
+header nav .conteneur-hebergement-activite {
+    margin-top: 0.88rem;
+}
+
+header nav a:hover {
     border-top: solid 0.188rem #0065FC;
 }
 
+
 /*************************************PARTIE PRINCIPALE******************************/
-.principale .phrase-accroche
-{
-    color: gray;
-   
-}
-.principale .zone-recherche
-{
-    display: flex;
-    align-items: center;
-}
-input[type="text"]
-{
-   border: 1px solid #f2f2f2;
-   height: 2.81rem;
-   font-size: 1.13rem;
-   color: black;
-   font-weight: bold;
-}
-.principale .map
-{
-    background: #f2f2f2;
-    width: 2.5rem;
-    height: 2.81rem;
-    text-align: center;
-    line-height: 2.81rem;
-    border-radius: 1rem 0 0 1rem;
-}
-input[type="text"]
-{
-    padding-left: 1rem;
-}
-::-webkit-input-placeholder
-{
-    color: black;
-    font-weight: bold;
-    font-size: 1.13rem;
-}
-button[type="submit"]
-{
-    height: 2.81rem;
-    background: #0065FC;
-    color: white;
-    border: none;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    cursor: pointer;
-    overflow: hidden;
-    padding-right: 1.2rem;     
-}
-.principale .zone-recherche i.empty
-{
-  position: relative;
-  right: 1.2rem;
-}  
+
+
+/* .principale .phrase-accroche {
+        color: gray;
+    }
+    
+    .principale .zone-recherche {
+        display: flex;
+        align-items: center;
+    }
+    
+    input[type="text"] {
+        border: 1px solid #f2f2f2;
+        height: 2.81rem;
+        font-size: 1.13rem;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .principale .map {
+        background: #f2f2f2;
+        width: 2.5rem;
+        height: 2.81rem;
+        text-align: center;
+        line-height: 2.81rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+    
+    input[type="text"] {
+        padding-left: 1rem;
+    }
+    
+    ::-webkit-input-placeholder {
+        color: black;
+        font-weight: bold;
+        font-size: 1.13rem;
+    }
+    
+    button[type="submit"] {
+        height: 2.81rem;
+        background: #0065FC;
+        color: white;
+        border: none;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        cursor: pointer;
+        overflow: hidden;
+        padding-right: 1.2rem;
+    }
+    
+    .principale .zone-recherche i.empty {
+        position: relative;
+        right: 1.2rem;
+    } */
+
+
 /********************PARTIE FILTRES*************************/
-.principale .filtres
-{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; 
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-.principale .filtres .titre-filtre
-{
-    color: black;
-    font-weight: bold;
-    margin-right: 2.5rem;
-}
-.principale .filtres .item-filtre
-{
-    display: flex;
-    border: 0.175rem solid #F2F2F2;
-    align-items: center;
-    height: 2.5rem;
-    margin-right: 2.5rem;
-    border-radius: 1.25rem;
-}
-.principale .filtres .ensemble
-{
-    display: inline-flex;
-}
-.principale .filtres .ensemble2
-{
-    display: inline-flex; 
-}
-.principale .filtres .ensemble :hover
-{
-    background: #DEEBFF;
-}
-.principale .filtres .ensemble2 :hover
-{
-    background: #DEEBFF;  
-}
-.principale .filtres .icone
-{
-    background: #DEEBFF;
-    margin-left: -0.5rem;
-    height: 2.5rem;
-    color: #0065FC;
-    width: 2.5rem;
-    border-radius: 100%;
-    text-align: center;
-}
-.principale .filtres .texte a
-{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding-left: 0.7rem;
-    padding-right: 0.9rem;
-}
-.principale .filtres .icone i
-{
-    color: #0065FC;
-    line-height: 2.5rem;
-}
+
+
+/* .principale .filtres {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .principale .filtres .titre-filtre {
+        color: black;
+        font-weight: bold;
+        margin-right: 2.5rem;
+    }
+    
+    .principale .filtres .item-filtre {
+        display: flex;
+        border: 0.175rem solid #F2F2F2;
+        align-items: center;
+        height: 2.5rem;
+        margin-right: 2.5rem;
+        border-radius: 1.25rem;
+    }
+    
+    .principale .filtres .ensemble {
+        display: inline-flex;
+    }
+    
+    .principale .filtres .ensemble2 {
+        display: inline-flex;
+    }
+    
+    .principale .filtres .ensemble :hover {
+        background: #DEEBFF;
+    }
+    
+    .principale .filtres .ensemble2 :hover {
+        background: #DEEBFF;
+    }
+    
+    .principale .filtres .icone {
+        background: #DEEBFF;
+        margin-left: -0.5rem;
+        height: 2.5rem;
+        color: #0065FC;
+        width: 2.5rem;
+        border-radius: 100%;
+        text-align: center;
+    }
+    
+    .principale .filtres .texte a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding-left: 0.7rem;
+        padding-right: 0.9rem;
+    }
+    
+    .principale .filtres .icone i {
+        color: #0065FC;
+        line-height: 2.5rem;
+    } */
+
 
 /*********partie texte et logo info1***********/
-.principale .logo-info-texte
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.principale .logo-info-texte .logo
-{
-    border: 0.106rem solid #F2F2F2;
-    margin-right: 0.5rem;
-    width: 1.56rem;
-    height: 1.56rem;
-    border-radius: 100%;
-    text-align: center;
-}
-.principale .logo i
-{
-    color: #0065FC;
-    font-size: 0.63rem;
-}
-/**************Partie Centrale************/
-.partie-centrale
-{
-    display: flex;
-    margin-top: 1rem;
-}
-#Hebergement
-{
-    background: #f2f2f2;
-    border-radius: 1.5rem;
-    margin-right: 3rem;
-}
-#Hebergement h2
-{
-    margin-top: 1.7rem;
-    margin-left: 3rem;
-}
-.galerie-hebergement
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.galerie-hebergement .item-galerie
-{
-    display: block;
-    width: 28%;
-    height: 13.75rem;
-    background-color: white;
-    margin: 1rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 1.25rem #0000002e; 
-    padding: 0.30rem;
-    text-decoration: none;
-    color: black;
-}
-.galerie-hebergement .item-galerie img
-{
-    width: 100%;
-    height: 55%;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
-    object-fit: cover;  
-}
 
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie
-{
-    margin-left: 0.5rem;    /*décale l'ensemble du texte de la gauche:conformité au rendu*/
-    line-height: 0.03rem;   /*permet d'éviter le depassement du texte de son conteneur*/
-}
 
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p
-{
-    margin-top: 1.5rem;    
-    color: gray;         
-}
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile
-{
-    margin-top: 1rem;   /*permet aussi d'espacer le texte*/
-}
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i
-{
-    color: #0065FC;
-}
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i.filled
-{
-    color: #F2F2F2;
-}
-#Hebergement .voir-plus
-{
-    margin-top: 1.56rem;
-    margin-left: 3rem;
-}
-#Hebergement .voir-plus a
-{
-    color: black;
-    text-decoration: none;
-}
-
-aside
-{
-    background: #f2f2f2;
-    border-radius: 1.5rem;
-}
-aside h2
-{
-    display: inline-block;
-    width: 80%;
-    margin-left: 1.87rem;
-}
-.bloc-galerie-aside
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;            /* permet elargir le width de aside*/
-}
-.bloc-galerie-aside .item-aside
-{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    background-color: white;
-    width: 20rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 1.25rem #0000002e;
-    height: 8.13rem;
-    padding: 0.20rem;
-    text-decoration: none;
-    position: relative;
-}
-.bloc-galerie-aside .item-aside img
-{
-    display: block;
-    width: 35%;
-    height: 7.7rem;         /*dimensionnement iùage dans le bloc*/
-    object-fit: cover;
-    border-top-left-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem;
+/* .principale .logo-info-texte {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     
+    .principale .logo-info-texte .logo {
+        border: 0.106rem solid #F2F2F2;
+        margin-right: 0.5rem;
+        width: 1.56rem;
+        height: 1.56rem;
+        border-radius: 100%;
+        text-align: center;
+    }
+    
+    .principale .logo i {
+        color: #0065FC;
+        font-size: 0.63rem;
+    } */
+
+
+/**************Partie Centrale************/
+
+
+/* .partie-centrale {
+        display: flex;
+        margin-top: 1rem;
+    }
+    
+    #Hebergement {
+        background: #f2f2f2;
+        border-radius: 1.5rem;
+        margin-right: 3rem;
+    }
+    
+    #Hebergement h2 {
+        margin-top: 1.7rem;
+        margin-left: 3rem;
+    }
+    
+    .galerie-hebergement {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .galerie-hebergement .item-galerie {
+        display: block;
+        width: 28%;
+        height: 13.75rem;
+        background-color: white;
+        margin: 1rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+        padding: 0.30rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .galerie-hebergement .item-galerie img {
+        width: 100%;
+        height: 55%;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+        object-fit: cover;
+    } */
+
+
+/* .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie {
+        margin-left: 0.5rem; */
+
+
+/*décale l'ensemble du texte de la gauche:conformité au rendu*/
+
+
+/* line-height: 0.03rem; */
+
+
+/*permet d'éviter le depassement du texte de son conteneur*/
+
+
 }
 
-.bloc-galerie-aside  .texte-sous-la-photo-aside
-{
-    margin-left: 1rem;
-    width: 9.36rem;
-    color: black;
+/*     
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p {
+        margin-top: 1.5rem;
+        color: gray;
+    }
+     */
+
+/* .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile {
+        margin-top: 1rem; */
+
+/*permet aussi d'espacer le texte*/
+
 }
-.bloc-galerie-aside  .texte-sous-la-photo-aside h3
-{
-    font-size: 0.94rem;
-    line-height: -6.5rem;
+
+/* .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i {
+        color: #0065FC;
+    }
+    
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i.filled {
+        color: #F2F2F2;
+    }
+    
+    #Hebergement .voir-plus {
+        margin-top: 1.56rem;
+        margin-left: 3rem;
+    }
+    
+    #Hebergement .voir-plus a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    aside {
+        background: #f2f2f2;
+        border-radius: 1.5rem;
+    }
+    
+    aside h2 {
+        display: inline-block;
+        width: 80%;
+        margin-left: 1.87rem;
+    } */
+
+/* .bloc-galerie-aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem; */
+
+/* permet elargir le width de aside*/
+
 }
-.bloc-galerie-aside .texte-sous-la-photo-aside .last-stars-aside
-{
-    margin-top: 2rem;
-}
-.bloc-galerie-aside .texte-sous-la-photo-aside p
-{
-    color: gray;  
-}
-.bloc-galerie-aside .texte-sous-la-photo-aside i
-{
-    color: #0065FC;
-}
-.bloc-galerie-aside  .texte-sous-la-photo-aside i.filled
-{
-    color:#F2F2F2 ;
-}
+
+/* .bloc-galerie-aside .item-aside {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        background-color: white;
+        width: 20rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+        height: 8.13rem;
+        padding: 0.20rem;
+        text-decoration: none;
+        position: relative;
+    } */
+
+/* .bloc-galerie-aside .item-aside img {
+        display: block;
+        width: 35%;
+        height: 7.7rem; */
+
+/*dimensionnement iùage dans le bloc*/
+
+/* object-fit: cover;
+        border-top-left-radius: 1.25rem;
+        border-bottom-left-radius: 1.25rem;
+    } */
+
+/* .bloc-galerie-aside .texte-sous-la-photo-aside {
+        margin-left: 1rem;
+        width: 9.36rem;
+        color: black;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside h3 {
+        font-size: 0.94rem;
+        line-height: -6.5rem;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside .last-stars-aside {
+        margin-top: 2rem;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside p {
+        color: gray;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside i {
+        color: #0065FC;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside i.filled {
+        color: #F2F2F2;
+    } */
 
 /***********partie Activités**********/
-#activité h2
-{
-    margin-top: 4rem;
-}
-#activité .galerie-activité
-{
-    display: flex;
+
+/*     
+    #activité h2 {
+        margin-top: 4rem;
+    }
     
-    flex-wrap: wrap;
+    #activité .galerie-activité {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
     
-    margin-bottom: 3rem;
-}
-#activité .galerie-activité .item-galerie-activité-photo-unique
-{
-    border-radius: 20px;
-    width: 19.06rem;
-    height: 27.5rem;
-    box-shadow: 0 0 1rem #0000002e;
-    margin-right: 5.7rem;
-    margin-top: 2rem;
-}
-#activité .galerie-activité .premiere
-{
-    margin-right: 5.7rem;
-}
-
-#activité .galerie-activité .item-parent-galerie-activité-photo-double
-{
-    display: flex;
-    flex-direction: column;
-    border-radius: 1.25rem;
-    width: 19.06rem;
-    height: 27.5rem;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-#activité .galerie-activité .item-galerie-activité-photo-unique img
-{
-    width: 100%;
-    object-fit: cover;
-    height: 24.5rem;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
-}
-#activité .galerie-activité .item-galerie-activité-photo-unique a
-{
-    text-decoration: none;
-}
-#activité .galerie-activité .item-galerie-activité-photo-unique a p
-{
-    width: 15.62rem;
-    padding-left: 1rem;
-    margin-top: 0.7rem;
-    color: black;
-    font-weight: bold;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
-{
-    border-radius: 1.25rem;
-    height: 14.36rem;
-    box-shadow: 0 0 1rem #0000002e;
-}
-
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue img
-{
-  object-fit: cover;
-  width: 100%;
-  height: 11.25rem;
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue a
-{
-    text-decoration: none;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue p
-{
-    padding-left: 1rem;
-    margin-top: 0.7rem;
-    color: black;
-    font-weight: bold;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
-{
-    border-radius: 1.25rem;
-    height: 10.63rem;
-    box-shadow: 0 0 1.25rem #0000002e;
-}
-
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img
-{
-    object-fit: cover;
-    width: 100%;
-    height: 7.75rem;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;   
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout a
-{
-    text-decoration: none; 
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout p
-{
-    padding-left: 1rem;
-    margin-top: 0.7rem;
-    color: black;
-    font-weight: bold;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
-{
-    border-radius: 1.25rem; 
-    height: 11.25rem;
-    box-shadow: 0 0 1.25rem #0000002e;
-}
-
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame img
-{
-    object-fit: cover;
-    width: 100%;
-    height: 8.44rem;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;   
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame a
-{
-    text-decoration: none;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame p
-{
-    padding-left: 1rem;
-    margin-top: 0.7rem;
-    color: black;
-    font-weight: bold;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
-{
-    border-radius: 1.25rem;
-    height: 13.75rem; 
-    box-shadow: 0 0 1.25rem #0000002e; 
-}
-
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img
-{
-  object-fit: cover;
-  width: 100%;
-  height: 10.88rem;;
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;  
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc a
-{
-    text-decoration: none;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc p
-{
-    padding-left: 1rem;
-    margin-top: 0.7rem;
-    color: black;
-    font-weight: bold;  
-}
-
+    #activité .galerie-activité .item-galerie-activité-photo-unique {
+        border-radius: 20px;
+        width: 19.06rem;
+        height: 27.5rem;
+        box-shadow: 0 0 1rem #0000002e;
+        margin-right: 5.7rem;
+        margin-top: 2rem;
+    }
+    
+    #activité .galerie-activité .premiere {
+        margin-right: 5.7rem;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.25rem;
+        width: 19.06rem;
+        height: 27.5rem;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    
+    #activité .galerie-activité .item-galerie-activité-photo-unique img {
+        width: 100%;
+        object-fit: cover;
+        height: 24.5rem;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    
+    #activité .galerie-activité .item-galerie-activité-photo-unique a {
+        text-decoration: none;
+    }
+    
+    #activité .galerie-activité .item-galerie-activité-photo-unique a p {
+        width: 15.62rem;
+        padding-left: 1rem;
+        margin-top: 0.7rem;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue {
+        border-radius: 1.25rem;
+        height: 14.36rem;
+        box-shadow: 0 0 1rem #0000002e;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue img {
+        object-fit: cover;
+        width: 100%;
+        height: 11.25rem;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue a {
+        text-decoration: none;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue p {
+        padding-left: 1rem;
+        margin-top: 0.7rem;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout {
+        border-radius: 1.25rem;
+        height: 10.63rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img {
+        object-fit: cover;
+        width: 100%;
+        height: 7.75rem;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout a {
+        text-decoration: none;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout p {
+        padding-left: 1rem;
+        margin-top: 0.7rem;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame {
+        border-radius: 1.25rem;
+        height: 11.25rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame img {
+        object-fit: cover;
+        width: 100%;
+        height: 8.44rem;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame a {
+        text-decoration: none;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame p {
+        padding-left: 1rem;
+        margin-top: 0.7rem;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc {
+        border-radius: 1.25rem;
+        height: 13.75rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img {
+        object-fit: cover;
+        width: 100%;
+        height: 10.88rem;
+        ;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc a {
+        text-decoration: none;
+    }
+    
+    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc p {
+        padding-left: 1rem;
+        margin-top: 0.7rem;
+        color: black;
+        font-weight: bold;
+    } */
 
 /*Partie FOOTER*/
-footer
-{
-    background:#F2F2F2 ;
-    display: flex;
-}
-footer .pied-page
-{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    margin-left: 1.7rem;
-    
-}
-.item-pied-page
-{
-    margin-right: 7rem;
-}
-footer ul
-{
-    width: 20.62rem;
-    list-style-type: none;
-    margin-left: -1.2rem;
-}
-footer ul li
-{
-    padding-bottom: 0.5rem;
-}
-footer h3
-{
-    margin-left: 1.25rem;
-}
-footer ul li a
-{
-    text-decoration: none;
-    color: gray;
-}
-footer li :hover
-{
-    color: blue;
-}
-/********************SUP à TABlette ********************************************/
-@media all and (max-width : 1300px)
-{
-    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .cannebierre
-    {
-       margin-left: -0.4rem;
-       font-size: 1rem;
-    } 
-    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
-    {
-        font-size: 1rem;
-    }
 
-} 
-/********************Partie Tablette********************************************/
-
- 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
-{
-    header nav .sign-up
-     {
-         margin-top: 0.7rem;
-         margin-left: 0;
-         order: 2;
-         margin-top: 0.7rem;
-     }
-     header nav .conteneur-heb-act
-     {
-         display: flex;
-         margin-left: 0;
-         order: 1;
-         margin-top: -0.56rem;
-     }
-     header nav .conteneur-heb-act .acti
-     {
-         border-bottom: none;
-     }
-     header nav .conteneur-heb-act .heb
-     {
-         border-bottom: none;
-     }
-     header nav .conteneur-heb-act a
-     {
-         padding: 11px 40px;
-     }
-     header .logo
-     {
-        margin-left: 1rem;
-        margin-top: 0.5rem;
-     }
-     header nav .sign-up
-    {
-        margin-top: -0.63rem;
-    }
-     .principale
-     {
-         margin-left: 1rem;
-     }
-     .principale .titre-filtre
-     {
-         width: 100%;
-     }
-     .principale .ensemble .item-filtre
-     {
-         margin-right: 0.6rem;
-     }
-     .principale .logo-info-texte .logo
-    {
-        margin-top: -0.13rem;
-    }
-    .partie-centrale
-    {
-        flex-direction: column-reverse;
-    }
-    aside
-{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-}
-.bloc-galerie-aside
-{
-    flex-direction: row;
-    margin-top: -2rem;
-}
-.bloc-galerie-aside .item-aside
-{
-    flex-direction: column;
-    width: 40%;
-    height: 30%;
-}
-
-.bloc-galerie-aside .item-aside img
-{
-    width: 100%;
-    height: 8.13rem;
-    border-top-left-radius: 1.25rem;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 1.25rem;
-}
-.bloc-galerie-aside .item-aside a
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-decoration: none;
-}
-.bloc-galerie-aside a .texte-sous-la-photo-aside .derniericone
-{
-    margin-top: 1.69rem;
-}
-#Hebergement
-{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.galerie-hebergement
-{
-    padding-left: 1.4rem;
-}
-
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
-{
-   font-size: 1rem;
-} 
-
-#activité .galerie-activité
-{
-    margin-left: 1rem;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double
-{
-    margin-right: -3rem;
-}
-footer ul
-{
-    width: 12rem;
-    list-style-type: none;
-    margin-left: -1.2rem;
-}
-footer .pied-page
-{
-    margin-left: 1rem;
-}
-.item-pied-page
-{
-    margin-right: 4rem;
-}
-}
-/*********************PARTIE RESPONSIVE : MOBILE: 375 ***************************/
-/* @media all and (max-width:600px) */
-@media all and (max-width : 425px) 
- {
-    header nav .sign-up
-    {
-        order: 1;
-        margin-top: 2.3rem;
-        margin-left: 7.8rem;
-    }
-    header nav .conteneur-heb-act
-    {
-        order: 2;
+/* footer {
+        background: #F2F2F2;
         display: flex;
-        margin-left: -9rem;
     }
-    header nav .conteneur-heb-act .acti
-    {
-        border-bottom: #F2F2F2 solid 0.188rem;
-    }
-    header nav .conteneur-heb-act .heb
-    {
-        border-bottom: #0065FC solid 0.188rem;
-    }
-    header nav .conteneur-heb-act a
-    {
-        padding: 1.10rem 3.7rem;
-        font-size: 1.125rem;
-    }
-    header nav a:hover
-   {
-   border-top: none;
-   }
     
-/***********************************MAIN******************************/
- .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
-  {
-     line-height: 3.5rem;
-     padding-left: 2rem; 
-     font-size: 1rem;   
- }
- button[type="submit"]
- {
-    border-radius: 1rem;
-    overflow: hidden;
-    width: 3.44rem;
-    height: 3.44rem;
- }
- .principale .map
-{
-    background: #f2f2f2;
-    height: 3.44rem;
-    text-align: center;
-    line-height: 3.44rem;
-    width: 3.438rem;
-}
-input[type="text"]
-{
-  
-   height: 3.44rem;
-   font-size: 1.13rem;
-   color: black;
-   font-weight: bold;
-   border: 0.063rem solid #f2f2f2;
-}
-  
-.principale .filtres .item-filtre
- {
-     margin-bottom: 1rem;
-     margin-left: 1.2rem;
- }
- .principale .filtres .ensemble .sous-ensemble
- {
-     margin-left: -1rem;
- }
- .principale .filtres .romantique-et-animaux
- {
-    display: inline-flex;
-    flex-direction: column;
- }
- .principale .logo-info-texte .logo
- {
-   margin-top: -1.2rem;
- }
- .principale .logo-info-texte p
- {
-    font-size: 0.88rem;
-    color: gray;
-    margin-top: 0.63rem;
- }  
- 
- .partie-centrale
- {
-     display: flex;
-     flex-wrap: wrap-reverse;
- }
- #Hebergement
-{
-    border-radius: inherit;
-    background: white;  
-}
-.galerie-hebergement .item-galerie
-{
-    width: 19.69rem;
-    height: 14.38rem;
-    margin: 0;
-    margin-left: 1.35rem;
-    margin-top: 1.5rem;
-} 
-#Hebergement h2
-{
-    margin-left: 1rem;
-} 
- aside
- {
-    border-radius: inherit;
-    margin-left: -0.6rem;
-    margin-right: -0.6rem;
- } 
- .bloc-galerie-aside .item-aside
- {
-     width: 100%;
- } 
- #activité .galerie-activité .item-galerie-activité-photo-unique
- {
-     width: 19.69rem;
-     height: 14.38rem;
-     margin-right: -5.7rem;
-     margin-left: 1.3rem;
-     margin-bottom: 2rem; 
- } 
-  #activité .galerie-activité .item-galerie-activité-photo-unique img
- {
-     width: 100%;
-     object-fit: cover;
-     height: 10.88rem;
- } 
- #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
- {
-     width: 19.69rem;
-     height: 14.38rem;;
-     margin-left: 1.3rem;
-     margin-top: -2rem;
-     margin-bottom: 2rem;
- } 
-  #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
- {
-    width: 19.69rem;
-    height: 14.38rem;
-    margin-left: 1.3rem;
- } 
-  #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img
- {
-     width: 100%;
-     object-fit: cover;
-     height: 10.88rem;
- }  
-  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
- {
-     width: 19.69rem;
-     height: 14.38rem;
-     margin-left: 1.3rem;
-     margin-top: -2rem;
-     margin-bottom: 2rem;
- } 
-  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame img
- {
-     width: 100%;
-     object-fit: cover;
-     height: 10.88rem;
- } 
-  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
- {
-     width: 19.69rem;
-     height: 14.38rem;
-     margin-left: 1.3rem;
- } 
- #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img
- {
-     width: 100%;
-     object-fit: cover;
-     height: 10.88rem;
- } 
- #activité .galerie-activité .deuxieme  /*Ciblage deuxieme photo double pour le decaler du footer*/
- {
-     margin-bottom: 3rem;
- } 
- #Hebergement .voir-plus
- {
-     margin-left: 2.8rem;
- } 
- #activité h2
-{
-    margin-left: 2.8rem;
-}  
-  
-footer
-{
-    background:#F2F2F2 ;
-    display: flex;
-}
-footer .pied-page
-{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    margin-left: 1.7rem;
-    
-}
-.item-pied-page
-{
-    margin-right: 2rem;
-}
-/******************Partie Mobile 425***************************/
-@media all and (max-width : 320px) 
-{
-    button[type="submit"]
- {
-    margin-left: -3rem;
- }
-    header nav .conteneur-heb-act .acti
-     {
-         border-bottom: #F2F2F2 solid 3px;
-         padding: 0.69rem 2.63rem;
-     } 
-      header nav .conteneur-heb-act .heb
-     {
-         border-bottom: #0065FC solid 3px;
-         padding: 0.69rem 2.81rem;
-         margin-left: -2rem;
-     }  
-     .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
-     {
-        line-height: 3.44rem; 
-        padding-left: 2rem;
+    footer .pied-page {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-left: 1.7rem;
     }
- aside
- {
-    border-radius: inherit;
-    margin-left: -0.6rem;
-    margin-right: -0.6rem;
- } 
- .galerie-hebergement
- {
-     margin-left: 1.3rem;
- }
- .galerie-hebergement .item-galerie
-{
-    width: 15.63rem;
-} 
-#activité .galerie-activité 
-{
-    margin: 0px 0px 0px;
-}
-#activité .galerie-activité .item-galerie-activité-photo-unique
-{
-    width: 15.63rem;
-    margin-left: 1.7rem;
-}
-#activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
-{
-    width: 15.63rem;
-    margin-left: 1.7rem;
-} 
-#activité .galerie-activité .premiere
-{
-    margin-right: 0;
-}
- #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
-{
-    width: 15.63rem;
-    margin-left: 1.7rem;
-} 
- #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
-{
-    width: 15.63rem;
-    margin-left: 1.7rem;
-} 
- #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
-{
-    width: 15.63rem;
-    margin-left: 1.7rem;
-}
-.filtres .titre-filtre
-{
-    width: 100%;
-} 
-.filtres .eco-et-fam
-{
-    flex-direction: column;
-}
-.principale .filtres .ensemble .sous-ensemble
-{
-    margin-left: 1rem;
-}
-.partie-centrale
-{
-    margin-left: -1rem;
-}
-footer
-{
-    background:#F2F2F2 ;
-    display: flex;
-}
-footer .pied-page
-{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    width: 15rem;
-    margin-right: 0;
-}
-footer .pied-page .item-pied-page
-{
-    width: 15rem;
-}
-footer .pied-page ul
-{
-    width: 15rem;
-}
-}
+    
+    .item-pied-page {
+        margin-right: 7rem;
+    }
+    
+    footer ul {
+        width: 20.62rem;
+        list-style-type: none;
+        margin-left: -1.2rem;
+    }
+    
+    footer ul li {
+        padding-bottom: 0.5rem;
+    }
+    
+    footer h3 {
+        margin-left: 1.25rem;
+    }
+    
+    footer ul li a {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    footer li :hover {
+        color: blue;
+    }
+   */
