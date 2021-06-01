@@ -1,5 +1,5 @@
 /*fonts pour le site*/
-	
+    
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 *{font-family: 'Raleway-Regular', sans-serif; 
@@ -63,7 +63,7 @@ header nav .sign-up a
 }
 header nav a:hover
 {
-    border-top: solid 3px #0065FC;
+    border-top: solid 0.188rem #0065FC;
 }
 
 /*************************************PARTIE PRINCIPALE******************************/
@@ -139,7 +139,7 @@ button[type="submit"]
 .principale .filtres .item-filtre
 {
     display: flex;
-    border: 2.8px solid #F2F2F2;
+    border: 0.175rem solid #F2F2F2;
     align-items: center;
     height: 2.5rem;
     margin-right: 2.5rem;
@@ -185,7 +185,6 @@ button[type="submit"]
     line-height: 2.5rem;
 }
 
-
 /*********partie texte et logo info1***********/
 .principale .logo-info-texte
 {
@@ -195,7 +194,7 @@ button[type="submit"]
 }
 .principale .logo-info-texte .logo
 {
-    border: 1.7px solid #F2F2F2;
+    border: 0.106rem solid #F2F2F2;
     margin-right: 0.5rem;
     width: 1.56rem;
     height: 1.56rem;
@@ -238,7 +237,7 @@ button[type="submit"]
     background-color: white;
     margin: 1rem;
     border-radius: 1.25rem;
-    box-shadow: 0 0 20px #0000002e; 
+    box-shadow: 0 0 1.25rem #0000002e; 
     padding: 0.30rem;
     text-decoration: none;
     color: black;
@@ -247,8 +246,8 @@ button[type="submit"]
 {
     width: 100%;
     height: 55%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
     object-fit: cover;  
 }
 
@@ -311,8 +310,8 @@ aside h2
     margin: 1rem;
     background-color: white;
     width: 20rem;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1.25rem #0000002e;
     height: 8.13rem;
     padding: 0.20rem;
     text-decoration: none;
@@ -324,17 +323,11 @@ aside h2
     width: 35%;
     height: 7.7rem;         /*dimensionnement iùage dans le bloc*/
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
     
 }
-/* .bloc-galerie-aside .item-aside a
-{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 3.12rem;
-    text-decoration: none;
-} */
+
 .bloc-galerie-aside  .texte-sous-la-photo-aside
 {
     margin-left: 1rem;
@@ -381,7 +374,7 @@ aside h2
     border-radius: 20px;
     width: 19.06rem;
     height: 27.5rem;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 0 1rem #0000002e;
     margin-right: 5.7rem;
     margin-top: 2rem;
 }
@@ -394,7 +387,7 @@ aside h2
 {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     width: 19.06rem;
     height: 27.5rem;
     justify-content: space-between;
@@ -405,8 +398,8 @@ aside h2
     width: 100%;
     object-fit: cover;
     height: 24.5rem;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
 }
 #activité .galerie-activité .item-galerie-activité-photo-unique a
 {
@@ -422,9 +415,9 @@ aside h2
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue
 {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     height: 14.36rem;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 0 1rem #0000002e;
 }
 
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue img
@@ -432,8 +425,8 @@ aside h2
   object-fit: cover;
   width: 100%;
   height: 11.25rem;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue a
 {
@@ -448,9 +441,9 @@ aside h2
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
 {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     height: 10.63rem;
-    box-shadow: 0 0 20px #0000002e;
+    box-shadow: 0 0 1.25rem #0000002e;
 }
 
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img
@@ -458,8 +451,8 @@ aside h2
     object-fit: cover;
     width: 100%;
     height: 7.75rem;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;   
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;   
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout a
 {
@@ -474,9 +467,9 @@ aside h2
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
 {
-    border-radius: 20px; 
+    border-radius: 1.25rem; 
     height: 11.25rem;
-    box-shadow: 0 0 20px #0000002e;
+    box-shadow: 0 0 1.25rem #0000002e;
 }
 
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame img
@@ -484,8 +477,8 @@ aside h2
     object-fit: cover;
     width: 100%;
     height: 8.44rem;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;   
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;   
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame a
 {
@@ -500,9 +493,9 @@ aside h2
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
 {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     height: 13.75rem; 
-    box-shadow: 0 0 20px #0000002e; 
+    box-shadow: 0 0 1.25rem #0000002e; 
 }
 
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img
@@ -510,8 +503,8 @@ aside h2
   object-fit: cover;
   width: 100%;
   height: 10.88rem;;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;  
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;  
 }
 #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc a
 {
@@ -524,7 +517,6 @@ aside h2
     color: black;
     font-weight: bold;  
 }
-
 
 
 /*Partie FOOTER*/
@@ -569,29 +561,24 @@ footer li :hover
     color: blue;
 }
 /********************SUP à TABlette ********************************************/
-@media all and (max-width : 1355px)
+@media all and (max-width : 1300px)
 {
-    .galerie-hebergement
-{
-    justify-content: inherit;
-}
-.galerie-hebergement .item-galerie
-{
-    width: 43%;
-}
-  
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .cannebierre
+    {
+       margin-left: -0.4rem;
+       font-size: 1rem;
+    } 
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
+    {
+        font-size: 1rem;
+    }
+
 } 
 /********************Partie Tablette********************************************/
-@media only screen and (min-width : 768px) and (max-width : 1065px)
+
+ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
 {
-    header nav
-    {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: inherit;
-        
-    }
     header nav .sign-up
      {
          margin-top: 0.7rem;
@@ -627,9 +614,6 @@ footer li :hover
     {
         margin-top: -0.63rem;
     }
-
-
-
      .principale
      {
          margin-left: 1rem;
@@ -663,18 +647,18 @@ footer li :hover
 }
 .bloc-galerie-aside .item-aside
 {
-    width: 12.5rem;
-    border-radius: 20px;
-    height: 15.94rem;;
+    flex-direction: column;
+    width: 40%;
+    height: 30%;
 }
+
 .bloc-galerie-aside .item-aside img
 {
     width: 100%;
     height: 8.13rem;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 1.25rem;
     border-bottom-left-radius: 0;
-    border-top-right-radius: 20px;
-    padding: 0.40rem;
+    border-top-right-radius: 1.25rem;
 }
 .bloc-galerie-aside .item-aside a
 {
@@ -683,20 +667,10 @@ footer li :hover
     flex-direction: column;
     text-decoration: none;
 }
-.bloc-galerie-aside a .texte-sous-la-photo-aside .dernierphrase
-{
-    margin-top: 1.25rem;
-}
-.bloc-galerie-aside a .texte-sous-la-photo-aside .icone-etoile
-{
-    margin-top: 1.56rem;
-}
 .bloc-galerie-aside a .texte-sous-la-photo-aside .derniericone
 {
     margin-top: 1.69rem;
 }
-
-
 #Hebergement
 {
     margin-left: 1rem;
@@ -709,7 +683,6 @@ footer li :hover
 
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3
 {
-
    font-size: 1rem;
 } 
 
@@ -721,15 +694,11 @@ footer li :hover
 {
     margin-right: -3rem;
 }
-
-
-
 footer ul
 {
     width: 12rem;
     list-style-type: none;
     margin-left: -1.2rem;
-
 }
 footer .pied-page
 {
@@ -739,21 +708,41 @@ footer .pied-page
 {
     margin-right: 4rem;
 }
-
 }
-
 /*********************PARTIE RESPONSIVE : MOBILE: 375 ***************************/
-
-
-
-
-
-
 /* @media all and (max-width:600px) */
 @media all and (max-width : 425px) 
  {
-     
-     header
+    header nav .sign-up
+    {
+        order: 1;
+        margin-top: 2.3rem;
+        margin-left: 7.8rem;
+    }
+    header nav .conteneur-heb-act
+    {
+        order: 2;
+        display: flex;
+        margin-left: -9rem;
+    }
+    header nav .conteneur-heb-act .acti
+    {
+        border-bottom: #F2F2F2 solid 0.188rem;
+    }
+    header nav .conteneur-heb-act .heb
+    {
+        border-bottom: #0065FC solid 0.188rem;
+    }
+    header nav .conteneur-heb-act a
+    {
+        padding: 1.10rem 3.7rem;
+        font-size: 1.125rem;
+    }
+    header nav a:hover
+   {
+   border-top: none;
+   }
+     /* header
      {
          flex-wrap: wrap;
          position: relative;
@@ -764,7 +753,6 @@ footer .pied-page
          flex-wrap: nowrap;
          width: 100%;
      }
-
      header nav .sign-up
      {
         position: absolute;
@@ -790,27 +778,22 @@ footer .pied-page
          border-bottom: #0065FC solid 3px;
          padding: 0.69rem 3.44rem;
          margin-left: -2rem;
-     }  
+     }   */
    
-     header nav .conteneur-heb-act.a 
-     {
-        
-     } 
      header nav a:hover
     {
     border-top: none;
     } 
     /***********************************MAIN******************************/
-
  .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
   {
-     line-height: 3.75rem;
+     line-height: 3.5rem;
      padding-left: 2rem; 
      font-size: 1rem;   
  }
  button[type="submit"]
  {
-    border-radius: 16px;
+    border-radius: 1rem;
     overflow: hidden;
     width: 3.44rem;
     height: 3.44rem;
@@ -821,7 +804,7 @@ footer .pied-page
     height: 3.44rem;
     text-align: center;
     line-height: 3.44rem;
-    width:55px;
+    width: 3.438rem;
 }
 input[type="text"]
 {
@@ -830,9 +813,7 @@ input[type="text"]
    font-size: 1.13rem;
    color: black;
    font-weight: bold;
-   border: 1px solid #f2f2f2;
-   border-top-right-radius: 1rem;
-   border-bottom-right-radius: 1rem;
+   border: 0.063rem solid #f2f2f2;
 }
   
 .principale .filtres .item-filtre
@@ -859,10 +840,7 @@ input[type="text"]
     color: gray;
     margin-top: 0.63rem;
  }  
-
  
-
-
  .partie-centrale
  {
      display: flex;
@@ -895,10 +873,6 @@ input[type="text"]
  {
      width: 100%;
  } 
-
-
-
-
  #activité .galerie-activité .item-galerie-activité-photo-unique
  {
      width: 19.69rem;
@@ -907,7 +881,6 @@ input[type="text"]
      margin-left: 1.3rem;
      margin-bottom: 2rem; 
  } 
-
   #activité .galerie-activité .item-galerie-activité-photo-unique img
  {
      width: 100%;
@@ -922,7 +895,6 @@ input[type="text"]
      margin-top: -2rem;
      margin-bottom: 2rem;
  } 
-
   #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
  {
     width: 19.69rem;
@@ -961,7 +933,6 @@ input[type="text"]
      object-fit: cover;
      height: 10.88rem;
  } 
-
  #activité .galerie-activité .deuxieme  /*Ciblage deuxieme photo double pour le decaler du footer*/
  {
      margin-bottom: 3rem;
@@ -975,8 +946,6 @@ input[type="text"]
     margin-left: 2.8rem;
 }  
   
-
-
 footer
 {
     background:#F2F2F2 ;
@@ -1014,10 +983,9 @@ footer .pied-page
      }  
      .principale .zone-recherche i.empty   /*Pour cacher le texte dans submit et centrer l'icone rech*/
      {
-        /* line-height: 3.44rem;  */
-        text-align: center;
+        line-height: 3.44rem; 
+        padding-left: 2rem;
     }
-
  aside
  {
     border-radius: inherit;
@@ -1050,19 +1018,16 @@ footer .pied-page
 {
     margin-right: 0;
 }
-
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout
 {
     width: 15.63rem;
     margin-left: 1.7rem;
 } 
-
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame
 {
     width: 15.63rem;
     margin-left: 1.7rem;
 } 
-
  #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc
 {
     width: 15.63rem;
@@ -1084,7 +1049,6 @@ footer .pied-page
 {
     margin-left: -1rem;
 }
-
 footer
 {
     background:#F2F2F2 ;
@@ -1106,7 +1070,4 @@ footer .pied-page ul
 {
     width: 15rem;
 }
-
-
-
 }
