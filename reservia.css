@@ -1,4 +1,4 @@
-/*fonts pour le site*/
+/*Généralités pour le site*/
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 * {
@@ -50,7 +50,7 @@ header nav .sign-up a {
 }
 
 
-/*Permet de décaler les deux blocs du haut du page pourle border*/
+/*Le marginTop permet de décaler les deux blocs du haut du page pourle border*/
 
 header nav .sign-up {
     margin-top: 0.88rem;
@@ -67,149 +67,117 @@ header nav a:hover {
 
 /*************************************PARTIE PRINCIPALE******************************/
 
+.principale .phrase-accroche {
+    color: gray;
+}
 
-/* .principale .phrase-accroche {
-        color: gray;
-    }
-    
-    .principale .zone-recherche {
-        display: flex;
-        align-items: center;
-    }
-    
-    input[type="text"] {
-        border: 1px solid #f2f2f2;
-        height: 2.81rem;
-        font-size: 1.13rem;
-        color: black;
-        font-weight: bold;
-    }
-    
-    .principale .map {
-        background: #f2f2f2;
-        width: 2.5rem;
-        height: 2.81rem;
-        text-align: center;
-        line-height: 2.81rem;
-        border-radius: 1rem 0 0 1rem;
-    }
-    
-    input[type="text"] {
-        padding-left: 1rem;
-    }
-    
-    ::-webkit-input-placeholder {
-        color: black;
-        font-weight: bold;
-        font-size: 1.13rem;
-    }
-    
-    button[type="submit"] {
-        height: 2.81rem;
-        background: #0065FC;
-        color: white;
-        border: none;
-        border-top-right-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        cursor: pointer;
-        overflow: hidden;
-        padding-right: 1.2rem;
-    }
-    
-    .principale .zone-recherche i.empty {
-        position: relative;
-        right: 1.2rem;
-    } */
+.principale .zone-recherche {
+    display: flex;
+}
 
+.principale .map {
+    background: #f2f2f2;
+    width: 2.5rem;
+    height: 2.81rem;
+    text-align: center;
+    line-height: 2.81rem;
+    border-radius: 1rem 0 0 1rem;
+}
 
-/********************PARTIE FILTRES*************************/
+input[type="text"] {
+    border: 0.063rem solid #f2f2f2;
+    font-size: 1.13rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
 
+::-webkit-input-placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 1.13rem;
+}
 
-/* .principale .filtres {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .principale .filtres .titre-filtre {
-        color: black;
-        font-weight: bold;
-        margin-right: 2.5rem;
-    }
-    
-    .principale .filtres .item-filtre {
-        display: flex;
-        border: 0.175rem solid #F2F2F2;
-        align-items: center;
-        height: 2.5rem;
-        margin-right: 2.5rem;
-        border-radius: 1.25rem;
-    }
-    
-    .principale .filtres .ensemble {
-        display: inline-flex;
-    }
-    
-    .principale .filtres .ensemble2 {
-        display: inline-flex;
-    }
-    
-    .principale .filtres .ensemble :hover {
-        background: #DEEBFF;
-    }
-    
-    .principale .filtres .ensemble2 :hover {
-        background: #DEEBFF;
-    }
-    
-    .principale .filtres .icone {
-        background: #DEEBFF;
-        margin-left: -0.5rem;
-        height: 2.5rem;
-        color: #0065FC;
-        width: 2.5rem;
-        border-radius: 100%;
-        text-align: center;
-    }
-    
-    .principale .filtres .texte a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        padding-left: 0.7rem;
-        padding-right: 0.9rem;
-    }
-    
-    .principale .filtres .icone i {
-        color: #0065FC;
-        line-height: 2.5rem;
-    } */
+.principale .zone-recherche i.empty {
+    position: relative;
+    right: 1.2rem;
+}
 
+button[type="submit"] {
+    background: #0065FC;
+    color: white;
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+    padding-right: 1.2rem;
+    overflow: hidden;
+    /*permet de cacher la loupe que j'avais sorti du bouton et aussi d'utiliser la balise Main*/
+}
 
-/*********partie texte et logo info1***********/
+.principale .conteneur-filtres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
 
+.principale .conteneur-filtres .titre-filtre {
+    color: black;
+    font-weight: bold;
+}
 
-/* .principale .logo-info-texte {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .principale .logo-info-texte .logo {
-        border: 0.106rem solid #F2F2F2;
-        margin-right: 0.5rem;
-        width: 1.56rem;
-        height: 1.56rem;
-        border-radius: 100%;
-        text-align: center;
-    }
-    
-    .principale .logo i {
-        color: #0065FC;
-        font-size: 0.63rem;
-    } */
+.principale .conteneur-filtres .item-filtre {
+    display: flex;
+    border: 0.175rem solid #F2F2F2;
+    align-items: center;
+    /*Pour centrer les items à l'interieur de leur div(itemfiltre)*/
+    height: 2.5rem;
+    margin-left: 2.5rem;
+    border-radius: 1.25rem;
+}
+
+.principale .conteneur-filtres a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 0.7rem;
+    padding-right: 0.9rem;
+}
+
+.principale .item-filtre:hover {
+    border-radius: 1.25rem;
+    background: #DEEBFF;
+}
+
+.principale .conteneur-filtres .icone {
+    background: #DEEBFF;
+    margin-left: -0.5rem;
+    line-height: 2.5rem;
+    color: #0065FC;
+    width: 2.5rem;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.principale .logo-info-texte {
+    display: flex;
+}
+
+.principale .logo-info-texte .conteneur-logo {
+    border: 0.106rem solid #F2F2F2;
+    margin-right: 0.5rem;
+    width: 1.56rem;
+    height: 1.56rem;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+.principale .conteneur-logo i {
+    color: #0065FC;
+    font-size: 0.63rem;
+}
 
 
 /**************Partie Centrale************/
