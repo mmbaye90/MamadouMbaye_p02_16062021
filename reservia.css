@@ -233,6 +233,7 @@ button[type="submit"] {
 
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p {
     margin-top: -0.8rem;
+    color: gray;
 }
 
 .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3 {
@@ -249,96 +250,82 @@ button[type="submit"] {
 }
 
 #Hebergement .voirplus {
+    line-height: 3rem;
     margin-left: 3rem;
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
-
-/* #Hebergement .voir-plus a {
-    color: black;
-    text-decoration: none;
-}  */
-
-
-/* aside {
+aside {
     background: #f2f2f2;
     border-radius: 1.5rem;
-} */
+}
 
-
-/* aside h2 {
+aside h2 {
     display: inline-block;
     width: 80%;
     margin-left: 1.87rem;
+}
+
+.bloc-galerie-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.bloc-galerie-aside .item-aside {
+    display: flex;
+    margin: 1rem;
+    background-color: white;
+    width: 20rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1.25rem #0000002e;
+    height: 9rem;
+    padding: 0.20rem;
+    text-decoration: none;
+}
+
+.bloc-galerie-aside .item-aside img {
+    display: block;
+    width: 35%;
+    height: 8.5rem;
+    object-fit: cover;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+}
+
+
+/*Pour se conformer à l'espacement du rendu final*/
+
+.bloc-galerie-aside .texte-sous-la-photo-aside {
+    margin-left: 1rem;
+}
+
+.bloc-galerie-aside .texte-sous-la-photo-aside h3 {
+    color: black;
+}
+
+.bloc-galerie-aside .texte-sous-la-photo-aside p {
+    color: gray;
+    margin-top: -0.5rem;
+}
+
+.bloc-galerie-aside .texte-sous-la-photo-aside i {
+    color: #0065FC;
+    margin-top: 1rem;
+}
+
+
+/* 
+.bloc-galerie-aside .texte-sous-la-photo-aside i.filled {
+    color: #F2F2F2;
 } */
 
 
-/* .bloc-galerie-aside {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem; */
-
-
-/* permet elargir le width de aside*/
-
-
-}
-
-/* .bloc-galerie-aside .item-aside {
-        display: flex;
-        flex-direction: row;
-        margin: 1rem;
-        background-color: white;
-        width: 20rem;
-        border-radius: 1.25rem;
-        box-shadow: 0 0 1.25rem #0000002e;
-        height: 8.13rem;
-        padding: 0.20rem;
-        text-decoration: none;
-        position: relative;
-    } */
-
-/* .bloc-galerie-aside .item-aside img {
-        display: block;
-        width: 35%;
-        height: 7.7rem; */
-
-/*dimensionnement iùage dans le bloc*/
-
-/* object-fit: cover;
-        border-top-left-radius: 1.25rem;
-        border-bottom-left-radius: 1.25rem;
-    } */
-
-/* .bloc-galerie-aside .texte-sous-la-photo-aside {
-        margin-left: 1rem;
-        width: 9.36rem;
-        color: black;
-    }
-    
-    .bloc-galerie-aside .texte-sous-la-photo-aside h3 {
-        font-size: 0.94rem;
-        line-height: -6.5rem;
-    }
-    
-    .bloc-galerie-aside .texte-sous-la-photo-aside .last-stars-aside {
-        margin-top: 2rem;
-    }
-    
-    .bloc-galerie-aside .texte-sous-la-photo-aside p {
-        color: gray;
-    }
-    
-    .bloc-galerie-aside .texte-sous-la-photo-aside i {
-        color: #0065FC;
-    }
-    
-    .bloc-galerie-aside .texte-sous-la-photo-aside i.filled {
-        color: #F2F2F2;
-    } */
-
 /***********partie Activités**********/
+
 
 /*     
     #activité h2 {
@@ -495,7 +482,9 @@ button[type="submit"] {
         font-weight: bold;
     } */
 
+
 /*Partie FOOTER*/
+
 
 /* footer {
         background: #F2F2F2;
