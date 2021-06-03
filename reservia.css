@@ -290,7 +290,7 @@ aside h2 {
 .bloc-galerie-aside .item-aside img {
     display: block;
     width: 35%;
-    height: 8.5rem;
+    height: 8.6rem;
     object-fit: cover;
     border-top-left-radius: 1.25rem;
     border-bottom-left-radius: 1.25rem;
@@ -317,170 +317,115 @@ aside h2 {
     margin-top: 1rem;
 }
 
-
-/* 
 .bloc-galerie-aside .texte-sous-la-photo-aside i.filled {
     color: #F2F2F2;
-} */
+}
 
 
 /***********partie Activités**********/
 
+#activites h2 {
+    margin-top: 4rem;
+}
 
-/*     
-    #activité h2 {
-        margin-top: 4rem;
-    }
-    
-    #activité .galerie-activité {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 3rem;
-    }
-    
-    #activité .galerie-activité .item-galerie-activité-photo-unique {
-        border-radius: 20px;
-        width: 19.06rem;
-        height: 27.5rem;
-        box-shadow: 0 0 1rem #0000002e;
-        margin-right: 5.7rem;
-        margin-top: 2rem;
-    }
-    
-    #activité .galerie-activité .premiere {
-        margin-right: 5.7rem;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1.25rem;
-        width: 19.06rem;
-        height: 27.5rem;
-        justify-content: space-between;
-        margin-top: 2rem;
-    }
-    
-    #activité .galerie-activité .item-galerie-activité-photo-unique img {
-        width: 100%;
-        object-fit: cover;
-        height: 24.5rem;
-        border-top-left-radius: 1.25rem;
-        border-top-right-radius: 1.25rem;
-    }
-    
-    #activité .galerie-activité .item-galerie-activité-photo-unique a {
-        text-decoration: none;
-    }
-    
-    #activité .galerie-activité .item-galerie-activité-photo-unique a p {
-        width: 15.62rem;
-        padding-left: 1rem;
-        margin-top: 0.7rem;
-        color: black;
-        font-weight: bold;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue {
-        border-radius: 1.25rem;
-        height: 14.36rem;
-        box-shadow: 0 0 1rem #0000002e;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue img {
-        object-fit: cover;
-        width: 100%;
-        height: 11.25rem;
-        border-top-left-radius: 1.25rem;
-        border-top-right-radius: 1.25rem;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue a {
-        text-decoration: none;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .fort-de-pomegue p {
-        padding-left: 1rem;
-        margin-top: 0.7rem;
-        color: black;
-        font-weight: bold;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout {
-        border-radius: 1.25rem;
-        height: 10.63rem;
-        box-shadow: 0 0 1.25rem #0000002e;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout img {
-        object-fit: cover;
-        width: 100%;
-        height: 7.75rem;
-        border-top-left-radius: 1.25rem;
-        border-top-right-radius: 1.25rem;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout a {
-        text-decoration: none;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .île-du-friout p {
-        padding-left: 1rem;
-        margin-top: 0.7rem;
-        color: black;
-        font-weight: bold;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame {
-        border-radius: 1.25rem;
-        height: 11.25rem;
-        box-shadow: 0 0 1.25rem #0000002e;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame img {
-        object-fit: cover;
-        width: 100%;
-        height: 8.44rem;
-        border-top-left-radius: 1.25rem;
-        border-top-right-radius: 1.25rem;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame a {
-        text-decoration: none;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Notre-dame p {
-        padding-left: 1rem;
-        margin-top: 0.7rem;
-        color: black;
-        font-weight: bold;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc {
-        border-radius: 1.25rem;
-        height: 13.75rem;
-        box-shadow: 0 0 1.25rem #0000002e;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc img {
-        object-fit: cover;
-        width: 100%;
-        height: 10.88rem;
-        ;
-        border-top-left-radius: 1.25rem;
-        border-top-right-radius: 1.25rem;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc a {
-        text-decoration: none;
-    }
-    
-    #activité .galerie-activité .item-parent-galerie-activité-photo-double .Parc p {
-        padding-left: 1rem;
-        margin-top: 0.7rem;
-        color: black;
-        font-weight: bold;
-    } */
+#activites a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#activites p {
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+}
+
+#activites .galerie-activite {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#activites .galerie-activite .item-galerie-activite-photo-unique {
+    border-radius: 20px;
+    width: 21%;
+    height: 27.5rem;
+    box-shadow: 0 0 1rem #0000002e;
+}
+
+#activites .galerie-activite .item-galerie-activite-photo-unique img {
+    width: 100%;
+    object-fit: cover;
+    height: 24.5rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+#activites .galerie-activite .item-parent-galerie-activite-photo-double {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+    width: 21%;
+    height: 27.5rem;
+    justify-content: space-between;
+}
+
+/#activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
+    border-radius: 1.25rem;
+    height: 14.36rem;
+    box-shadow: 0 0 1rem #0000002e;
+}
+
+#activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue img {
+    object-fit: cover;
+    width: 100%;
+    height: 11.25rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+#activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout {
+    border-radius: 20px;
+    height: 10.63rem;
+    box-shadow: 0 0 20px #0000002e;
+}
+
+#activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout img {
+    object-fit: cover;
+    width: 100%;
+    height: 7.75rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame {
+    border-radius: 1.25rem;
+    height: 11.25rem;
+    box-shadow: 0 0 1.25rem #0000002e;
+}
+
+#activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame img {
+    object-fit: cover;
+    width: 100%;
+    height: 8.44rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+#activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc {
+    border-radius: 1.25rem;
+    height: 13.75rem;
+    box-shadow: 0 0 1.25rem #0000002e;
+}
+
+#activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc img {
+    object-fit: cover;
+    width: 100%;
+    height: 10.88rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
 
 
 /*Partie FOOTER*/
