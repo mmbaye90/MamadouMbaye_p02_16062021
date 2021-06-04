@@ -371,7 +371,7 @@ aside h2 {
     justify-content: space-between;
 }
 
-/#activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
+#activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
     border-radius: 1.25rem;
     height: 14.36rem;
     box-shadow: 0 0 1rem #0000002e;
@@ -430,43 +430,39 @@ aside h2 {
 
 /*Partie FOOTER*/
 
+footer {
+    background: #F2F2F2;
+}
 
-/* footer {
-        background: #F2F2F2;
-        display: flex;
-    }
-    
-    footer .pied-page {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 2rem;
-        margin-left: 1.7rem;
-    }
-    
-    .item-pied-page {
-        margin-right: 7rem;
-    }
-    
-    footer ul {
-        width: 20.62rem;
-        list-style-type: none;
-        margin-left: -1.2rem;
-    }
-    
-    footer ul li {
-        padding-bottom: 0.5rem;
-    }
-    
-    footer h3 {
-        margin-left: 1.25rem;
-    }
-    
-    footer ul li a {
-        text-decoration: none;
-        color: gray;
-    }
-    
-    footer li :hover {
-        color: blue;
-    }
-   */
+footer .pied-page {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+footer .pied-page .item-pied-page {
+    margin-right: 17rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer h3 {
+    margin-left: 2.5rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    padding-bottom: 0.5rem;
+}
+
+footer .pied-page a {
+    text-decoration: none;
+    color: gray;
+}
+
+footer li :hover {
+    color: blue;
+}
