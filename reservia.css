@@ -1,468 +1,930 @@
-/*Généralités pour le site*/
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-* {
-    font-family: 'Raleway-Regular', sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-#blocpage {
-    width: 95%;
-    margin: auto;
-}
-
-
-/********* Entête de la page *******/
-
-header {
-    display: flex;
-}
-
-header .logo {
-    flex: 1;
-    margin-top: 1.2rem;
-}
-
-header nav {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-header nav a {
-    padding: 0.68rem 2.5rem;
-    text-decoration: none;
-    color: #0065FC;
-    font-size: 1rem;
-}
-
-header nav .conteneur-hebergement-activite .activites {
-    color: gray;
-}
-
-header nav .sign-up a {
-    color: #0065FC;
-    font-weight: bold;
-}
-
-
-/*Le marginTop permet de décaler les deux blocs du haut du page pourle border*/
-
-header nav .sign-up {
-    margin-top: 0.88rem;
-}
-
-header nav .conteneur-hebergement-activite {
-    margin-top: 0.88rem;
-}
-
-header nav a:hover {
-    border-top: solid 0.188rem #0065FC;
-}
-
-
-/*************************************PARTIE PRINCIPALE******************************/
-
-.principale .phrase-accroche {
-    color: gray;
-}
-
-.principale .zone-recherche {
-    display: flex;
-}
-
-.principale .map {
-    background: #f2f2f2;
-    width: 2.5rem;
-    height: 2.81rem;
-    text-align: center;
-    line-height: 2.81rem;
-    border-radius: 1rem 0 0 1rem;
-}
-
-input[type="text"] {
-    border: 0.063rem solid #f2f2f2;
-    font-size: 1.13rem;
-    font-weight: bold;
-    padding-left: 1rem;
-}
-
-::-webkit-input-placeholder {
-    color: black;
-    font-weight: bold;
-    font-size: 1.13rem;
-}
-
-.principale .zone-recherche i.empty {
-    position: relative;
-    right: 1.2rem;
-}
-
-button[type="submit"] {
-    background: #0065FC;
-    color: white;
-    border: none;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    cursor: pointer;
-    padding-right: 1.2rem;
-    overflow: hidden;
-    /*permet de cacher la loupe que j'avais sorti du bouton et aussi d'utiliser la balise Main*/
-}
-
-.principale .conteneur-filtres {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.principale .conteneur-filtres .titre-filtre {
-    color: black;
-    font-weight: bold;
-}
-
-.principale .conteneur-filtres .item-filtre {
-    display: flex;
-    border: 0.175rem solid #F2F2F2;
-    align-items: center;
-    /*Pour centrer les items à l'interieur de leur div(itemfiltre)*/
-    height: 2.5rem;
-    margin-left: 2.5rem;
-    border-radius: 1.25rem;
-}
-
-.principale .conteneur-filtres a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding-left: 0.7rem;
-    padding-right: 0.9rem;
-}
-
-.principale .item-filtre:hover {
-    border-radius: 1.25rem;
-    background: #DEEBFF;
-}
-
-.principale .conteneur-filtres .icone {
-    background: #DEEBFF;
-    margin-left: -0.5rem;
-    line-height: 2.5rem;
-    color: #0065FC;
-    width: 2.5rem;
-    border-radius: 100%;
-    text-align: center;
-}
-
-.principale .logo-info-texte {
-    display: flex;
-}
-
-.principale .logo-info-texte .conteneur-logo {
-    /*Permet d'arrondir et d'aligner le logo et le texte*/
-    border: 0.106rem solid #F2F2F2;
-    margin-right: 0.5rem;
-    width: 1.56rem;
-    height: 1.56rem;
-    border-radius: 100%;
-    text-align: center;
-    margin-top: 0.75rem;
-}
-
-.principale .conteneur-logo i {
-    color: #0065FC;
-    font-size: 0.63rem;
-}
-
-
-/**************Partie Centrale************/
-
-.partie-centrale {
-    display: flex;
-    margin-top: 1rem;
-}
-
-#Hebergement {
-    background: #f2f2f2;
-    border-radius: 1.5rem;
-    margin-right: 3rem;
-}
-
-#Hebergement h2 {
-    margin-top: 1.7rem;
-    margin-left: 3rem;
-}
-
-.galerie-hebergement {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.galerie-hebergement .item-galerie {
-    display: block;
-    width: 28%;
-    height: 13.75rem;
-    background-color: white;
-    margin: 1rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 1.25rem #0000002e;
-    padding: 0.30rem;
-    text-decoration: none;
-    color: black;
-}
-
-.galerie-hebergement .item-galerie img {
-    width: 100%;
-    height: 55%;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
-    object-fit: cover;
-}
-
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie {
-    margin-left: 0.5rem;
-    margin-top: -0.5rem;
-}
-
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p {
-    margin-top: -0.8rem;
-    color: gray;
-}
-
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3 {
-    margin-top: 0.8rem
-}
-
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile {
-    margin-top: 1rem;
-    color: #0065FC;
-}
-
-.galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i.filled {
-    color: #F2F2F2;
-}
-
-#Hebergement .voirplus {
-    line-height: 3rem;
-    margin-left: 3rem;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-aside {
-    background: #f2f2f2;
-    border-radius: 1.5rem;
-}
-
-aside h2 {
-    display: inline-block;
-    width: 80%;
-    margin-left: 1.87rem;
-}
-
-.bloc-galerie-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
-
-.bloc-galerie-aside .item-aside {
-    display: flex;
-    margin: 1rem;
-    background-color: white;
-    width: 20rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 1.25rem #0000002e;
-    height: 9rem;
-    padding: 0.20rem;
-    text-decoration: none;
-}
-
-.bloc-galerie-aside .item-aside img {
-    display: block;
-    width: 35%;
-    height: 8.6rem;
-    object-fit: cover;
-    border-top-left-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem;
-}
-
-
-/*Pour se conformer à l'espacement du rendu final*/
-
-.bloc-galerie-aside .texte-sous-la-photo-aside {
-    margin-left: 1rem;
-}
-
-.bloc-galerie-aside .texte-sous-la-photo-aside h3 {
-    color: black;
-}
-
-.bloc-galerie-aside .texte-sous-la-photo-aside p {
-    color: gray;
-    margin-top: -0.5rem;
-}
-
-.bloc-galerie-aside .texte-sous-la-photo-aside i {
-    color: #0065FC;
-    margin-top: 1rem;
-}
-
-.bloc-galerie-aside .texte-sous-la-photo-aside i.filled {
-    color: #F2F2F2;
-}
-
-
-/***********partie Activités**********/
-
-#activites h2 {
-    margin-top: 4rem;
-}
-
-#activites a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-#activites p {
-    padding-left: 1rem;
-    margin-top: 0.7rem;
-}
-
-#activites .galerie-activite {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-
-#activites .galerie-activite .item-galerie-activite-photo-unique {
-    border-radius: 20px;
-    width: 21%;
-    height: 27.5rem;
-    box-shadow: 0 0 1rem #0000002e;
-}
-
-#activites .galerie-activite .item-galerie-activite-photo-unique img {
-    width: 100%;
-    object-fit: cover;
-    height: 24.5rem;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1.25rem;
-    width: 21%;
-    height: 27.5rem;
-    justify-content: space-between;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
-    border-radius: 1.25rem;
-    height: 14.36rem;
-    box-shadow: 0 0 1rem #0000002e;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue img {
-    object-fit: cover;
-    width: 100%;
-    height: 11.25rem;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout {
-    border-radius: 20px;
-    height: 10.63rem;
-    box-shadow: 0 0 20px #0000002e;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout img {
-    object-fit: cover;
-    width: 100%;
-    height: 7.75rem;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame {
-    border-radius: 1.25rem;
-    height: 11.25rem;
-    box-shadow: 0 0 1.25rem #0000002e;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame img {
-    object-fit: cover;
-    width: 100%;
-    height: 8.44rem;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc {
-    border-radius: 1.25rem;
-    height: 13.75rem;
-    box-shadow: 0 0 1.25rem #0000002e;
-}
-
-#activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc img {
-    object-fit: cover;
-    width: 100%;
-    height: 10.88rem;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
-}
-
-
-/*Partie FOOTER*/
-
-footer {
-    background: #F2F2F2;
-}
-
-footer .pied-page {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-footer .pied-page .item-pied-page {
-    margin-right: 17rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-footer h3 {
-    margin-left: 2.5rem;
-}
-
-footer ul {
-    list-style-type: none;
-}
-
-footer ul li {
-    padding-bottom: 0.5rem;
-}
-
-footer .pied-page a {
-    text-decoration: none;
-    color: gray;
-}
-
-footer li :hover {
-    color: blue;
-}
+    /*Généralités pour le site*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+    * {
+        font-family: 'Raleway-Regular', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #blocpage {
+        width: 95%;
+        margin: auto;
+    }
+    /********* Entête de la page *******/
+    
+    header {
+        display: flex;
+    }
+    
+    header .logo {
+        flex: 1;
+        margin-top: 1.2rem;
+    }
+    
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    header nav a {
+        padding: 0.68rem 2.5rem;
+        text-decoration: none;
+        color: #0065FC;
+        font-size: 1rem;
+    }
+    
+    header nav .conteneur-hebergement-activite .activites {
+        color: gray;
+    }
+    
+    header nav .sign-up a {
+        color: #0065FC;
+        font-weight: bold;
+    }
+    /*Le marginTop permet de décaler les deux blocs du haut du page pourle border*/
+    
+    header nav .sign-up {
+        margin-top: 0.88rem;
+    }
+    
+    header nav .conteneur-hebergement-activite {
+        margin-top: 0.88rem;
+    }
+    
+    header nav a:hover {
+        border-top: solid 0.188rem #0065FC;
+    }
+    /*************************************PARTIE PRINCIPALE******************************/
+    
+    .principale .phrase-accroche {
+        color: gray;
+    }
+    
+    .principale .zone-recherche {
+        display: flex;
+    }
+    
+    .principale .map {
+        background: #f2f2f2;
+        width: 2.5rem;
+        height: 2.81rem;
+        text-align: center;
+        line-height: 2.81rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+    
+    input[type="text"] {
+        border: 0.063rem solid #f2f2f2;
+        font-size: 1.13rem;
+        font-weight: bold;
+        padding-left: 1rem;
+    }
+    
+     ::-webkit-input-placeholder {
+        color: black;
+        font-weight: bold;
+        font-size: 1.13rem;
+    }
+    
+    .principale .zone-recherche i.empty {
+        position: relative;
+        right: 1.2rem;
+    }
+    
+    button[type="submit"] {
+        background: #0065FC;
+        color: white;
+        border: none;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        cursor: pointer;
+        padding-right: 1.2rem;
+        overflow: hidden;
+        /*permet de cacher la loupe que j'avais sorti du bouton et aussi d'utiliser la balise Main*/
+    }
+    
+    .principale .conteneur-filtres {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .principale .conteneur-filtres .titre-filtre {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .principale .conteneur-filtres .item-filtre {
+        display: flex;
+        border: 0.175rem solid #F2F2F2;
+        align-items: center;
+        height: 2.5rem;
+        margin-left: 2.5rem;
+        border-radius: 1.25rem;
+    }
+    
+    .principale .conteneur-filtres a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding-left: 0.7rem;
+        padding-right: 0.9rem;
+    }
+    
+    .principale .item-filtre:hover {
+        border-radius: 1.25rem;
+        background: #DEEBFF;
+    }
+    
+    .principale .conteneur-filtres .icone {
+        background: #DEEBFF;
+        margin-left: -0.5rem;
+        line-height: 2.5rem;
+        color: #0065FC;
+        width: 2.5rem;
+        border-radius: 100%;
+        text-align: center;
+    }
+    
+    .principale .logo-info-texte {
+        display: flex;
+    }
+    
+    .principale .logo-info-texte .conteneur-logo {
+        /*Permet d'arrondir et d'aligner le logo et le texte*/
+        border: 0.106rem solid #F2F2F2;
+        margin-right: 0.5rem;
+        width: 1.56rem;
+        height: 1.56rem;
+        border-radius: 100%;
+        text-align: center;
+        margin-top: 0.75rem;
+    }
+    
+    .principale .conteneur-logo i {
+        color: #0065FC;
+        font-size: 0.63rem;
+    }
+    /**************Partie Centrale************/
+    
+    .partie-centrale {
+        display: flex;
+        margin-top: 1rem;
+    }
+    
+    #Hebergement {
+        background: #f2f2f2;
+        border-radius: 1.5rem;
+        margin-right: 3rem;
+    }
+    
+    #Hebergement h2 {
+        margin-top: 1.7rem;
+        margin-left: 3rem;
+    }
+    
+    .galerie-hebergement {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .galerie-hebergement .item-galerie {
+        display: block;
+        width: 28%;
+        height: 13.75rem;
+        background-color: white;
+        margin: 1rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+        padding: 0.30rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .galerie-hebergement .item-galerie img {
+        width: 100%;
+        height: 55%;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+        object-fit: cover;
+    }
+    
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie {
+        margin-left: 0.5rem;
+        margin-top: -0.5rem;
+    }
+    
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie p {
+        margin-top: -0.8rem;
+        color: gray;
+    }
+    
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie h3 {
+        margin-top: 0.8rem
+    }
+    
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile {
+        margin-top: 1rem;
+        color: #0065FC;
+    }
+    
+    .galerie-hebergement .item-galerie .texte-sous-la-photo-galerie .etoile i.filled {
+        color: #F2F2F2;
+    }
+    
+    #Hebergement .voirplus {
+        line-height: 3rem;
+        margin-left: 3rem;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    
+    aside {
+        background: #f2f2f2;
+        border-radius: 1.5rem;
+    }
+    
+    aside h2 {
+        display: inline-block;
+        width: 80%;
+        margin-left: 1.87rem;
+    }
+    
+    .bloc-galerie-aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .bloc-galerie-aside .item-aside {
+        display: flex;
+        margin: 1rem;
+        background-color: white;
+        width: 20rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+        height: 9rem;
+        padding: 0.20rem;
+        text-decoration: none;
+    }
+    
+    .bloc-galerie-aside .item-aside img {
+        display: block;
+        width: 35%;
+        height: 8.6rem;
+        object-fit: cover;
+        border-top-left-radius: 1.25rem;
+        border-bottom-left-radius: 1.25rem;
+    }
+    /*Pour se conformer à l'espacement du rendu final*/
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside {
+        margin-left: 1rem;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside h3 {
+        color: black;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside p {
+        color: gray;
+        margin-top: -0.5rem;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside i {
+        color: #0065FC;
+        margin-top: 1rem;
+    }
+    
+    .bloc-galerie-aside .texte-sous-la-photo-aside i.filled {
+        color: #F2F2F2;
+    }
+    /***********partie Activités**********/
+    
+    #activites h2 {
+        margin-top: 4rem;
+    }
+    
+    #activites a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #activites p {
+        padding-left: 1rem;
+        margin-top: 0.7rem;
+    }
+    
+    #activites .galerie-activite {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    
+    #activites .galerie-activite .item-galerie-activite-photo-unique {
+        border-radius: 20px;
+        width: 19.063rem;
+        height: 27.5rem;
+        box-shadow: 0 0 1rem #0000002e;
+    }
+    
+    #activites .galerie-activite .item-galerie-activite-photo-unique img {
+        width: 100%;
+        object-fit: cover;
+        height: 24.5rem;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.25rem;
+        width: 19.063rem;
+        height: 27.5rem;
+        justify-content: space-between;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
+        border-radius: 1.25rem;
+        height: 14.36rem;
+        box-shadow: 0 0 1rem #0000002e;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue img {
+        object-fit: cover;
+        width: 100%;
+        height: 11.25rem;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout {
+        border-radius: 20px;
+        height: 10.63rem;
+        box-shadow: 0 0 20px #0000002e;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout img {
+        object-fit: cover;
+        width: 100%;
+        height: 7.75rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame {
+        border-radius: 1.25rem;
+        height: 11.25rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame img {
+        object-fit: cover;
+        width: 100%;
+        height: 8.44rem;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc {
+        border-radius: 1.25rem;
+        height: 13.75rem;
+        box-shadow: 0 0 1.25rem #0000002e;
+    }
+    
+    #activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc img {
+        object-fit: cover;
+        width: 100%;
+        height: 10.88rem;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+    /*Partie FOOTER*/
+    
+    footer {
+        background: #F2F2F2;
+    }
+    
+    footer .pied-page {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    
+    footer .pied-page .item-pied-page {
+        margin-right: 17rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    footer h3 {
+        margin-left: 2.5rem;
+    }
+    
+    footer ul {
+        list-style-type: none;
+    }
+    
+    footer ul li {
+        padding-bottom: 0.5rem;
+    }
+    
+    footer .pied-page a {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    footer li :hover {
+        color: blue;
+    }
+    /********** Partie RESPONSIVE*************/
+    
+    @media all and (max-width: 1360px) {
+        footer .pied-page .item-pied-page {
+            margin-right: 10rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double {
+            width: 21%;
+        }
+        #activites .galerie-activite .item-galerie-activite-photo-unique {
+            width: 21%;
+        }
+    }
+    
+    @media all and (max-width: 1335px) {
+        .partie-centrale {
+            flex-direction: column-reverse;
+        }
+        .bloc-galerie-aside {
+            flex-direction: row;
+            margin-top: -2rem;
+        }
+        .bloc-galerie-aside .item-aside {
+            flex-direction: column;
+            width: 40%;
+            height: 19rem;
+        }
+        .bloc-galerie-aside .item-aside img {
+            width: 100%;
+            height: 8.13rem;
+            border-top-left-radius: 1.25rem;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 1.25rem;
+        }
+        #Hebergement {
+            background: inherit;
+        }
+    }
+    /* @media all and (max-width: 1228px) {
+    #activites p {
+        margin-top: 0.2rem;
+    }
+}  */
+    
+    @media all and (max-width: 900px) {
+        .galerie-hebergement .item-galerie {
+            height: 17rem;
+        }
+    }
+    
+    @media all and (max-width: 685px) {
+        header nav a {
+            padding: 0.68rem 2rem;
+        }
+        .bloc-galerie-aside .item-aside {
+            height: 20rem;
+        }
+        #activites .galerie-activite .item-galerie-activite-photo-unique {
+            width: 15rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double {
+            width: 15rem;
+        }
+        .galerie-hebergement .item-galerie {
+            height: 19rem;
+        }
+        footer .pied-page .item-pied-page {
+            margin-right: 2rem;
+        }
+    }
+    
+    @media all and (max-width: 566px) {
+        header nav a {
+            padding: 0.68rem 0.5rem;
+        }
+        .bloc-galerie-aside {
+            flex-direction: column;
+        }
+        .bloc-galerie-aside .item-aside {
+            flex-direction: row;
+            width: 19rem;
+            height: 9rem;
+        }
+        .bloc-galerie-aside .item-aside img {
+            width: 35%;
+            height: 8.55rem;
+            border-top-left-radius: 1.25rem;
+            border-bottom-left-radius: 1.25rem;
+            border-top-right-radius: 0;
+        }
+        .galerie-hebergement .item-galerie {
+            height: 15rem;
+            width: 65%;
+            margin-left: 4.7rem;
+        }
+        #activites .galerie-activite {
+            padding-left: 4.7rem;
+        }
+    }
+    
+    @media all and (max-width: 443px) {
+        /* header nav .sign-up {
+            order: 1;
+            margin-left: 9rem;
+            margin-top: 2.3rem;
+        }
+        header nav .conteneur-hebergement-activite {
+            order: 2;
+            margin-left: -7rem;
+            margin-top: 1rem;
+        }
+        header nav .conteneur-hebergement-activite a {
+            padding: 0.688rem 2.5rem;
+            font-size: 1.125rem;
+        }
+        header nav a:hover {
+            border-top: none;
+        } */
+        /* header {
+            flex-wrap: wrap;
+            position: relative;
+        } */
+        /* header nav {
+            display: flex;
+            flex-wrap: nowrap;
+        } */
+        header nav .sign-up {
+            /* position: absolute;
+            top: 1.4rem;
+            right: 0; */
+            order: 1;
+            margin-top: 2.3rem;
+            margin-left: 10rem;
+        }
+        /* header nav .sign-up a {
+            padding: 0;
+            padding-right: 1rem;
+        } */
+        header nav .conteneur-hebergement-activite {
+            display: flex;
+            order: 2;
+            margin-left: -6rem;
+        }
+        header nav .conteneur-hebergement-activite .activites {
+            /* border-bottom: #F2F2F2 solid 3px; */
+        }
+        header nav .conteneur-hebergement-activite .hebergements {
+            /* border-bottom: #0065FC solid 3px; */
+            padding: 11px 50px;
+            margin-left: -2rem;
+        }
+        header nav .conteneur-hebergement-activite a {
+            padding: 11px 55px;
+        }
+        header nav a:hover {
+            border-top: none;
+        }
+        button[type="submit"] {
+            border-radius: 1rem;
+            overflow: hidden;
+            width: 3.44rem;
+            height: 3.44rem;
+            margin-left: -2rem;
+        }
+        .principale .zone-recherche i.empty/*Pour cacher le texte dans submit et centrer l'icone rech*/
+        {
+            line-height: 3.5rem;
+            padding-left: 2rem;
+            font-size: 1rem;
+        }
+        .principale .map {
+            height: 3.44rem;
+            text-align: center;
+            line-height: 3.44rem;
+            width: 3.438rem;
+        }
+        .principale .conteneur-filtres .titre-filtre {
+            width: 100%;
+        }
+        .principale .conteneur-filtres .item-filtre {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    @media all and (max-width: 375px) {
+        header nav .conteneur-hebergement-activite {
+            margin-left: 0rem;
+        }
+        header nav .conteneur-hebergement-activite .activites {
+            border-bottom: #F2F2F2 solid 3px;
+            padding: 11px 65px;
+        }
+        header nav .conteneur-hebergement-activite .hebergements {
+            border-bottom: #0065FC solid 3px;
+            padding: 11px 35px;
+            /* margin-left: -0.7rem; */
+            margin-left: -7rem;
+        }
+        header nav .conteneur-hebergement-activite a {
+            /* width: 100%; */
+            /* text-align: center; */
+        }
+        header nav .sign-up {
+            margin-left: 9rem;
+        }
+        .principale .conteneur-filtres .item-filtre {
+            margin-left: 1rem;
+        }
+        aside {
+            border-radius: inherit;
+            margin-right: -0.55rem;
+            margin-left: -0.55rem;
+        }
+        #Hebergement {
+            margin-right: 0rem;
+        }
+        #Hebergement h2 {
+            margin-left: 1rem;
+        }
+        .galerie-hebergement {
+            justify-content: inherit;
+        }
+        .galerie-hebergement .item-galerie {
+            height: 15rem;
+            width: 19rem;
+            margin-left: 1rem;
+        }
+        #activites h2 {
+            margin-left: 1rem;
+        }
+        #activites .galerie-activite {
+            justify-content: inherit;
+            padding-left: 0rem;
+        }
+        #activites .galerie-activite .item-galerie-activite-photo-unique {
+            width: 19rem;
+            height: 13.75rem;
+            margin-left: 0.8rem;
+        }
+        #activites .galerie-activite .vieuxport {
+            margin-top: -0.5rem;
+        }
+        #activites .galerie-activite .parcnational {
+            margin-top: 3.5rem;
+        }
+        #activites .galerie-activite .item-galerie-activite-photo-unique img {
+            height: 10.88rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
+            width: 19rem;
+            height: 13.75rem;
+            margin-bottom: 1.5rem;
+            margin-left: 0.8rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue img {
+            height: 10.88rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout {
+            width: 19rem;
+            height: 13.75rem;
+            margin-bottom: 2rem;
+            margin-left: 0.8rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout img {
+            height: 10.88rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame {
+            width: 19rem;
+            height: 13.75rem;
+            margin-left: 0.8rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame img {
+            height: 10.88rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc {
+            width: 19rem;
+            margin-top: 2rem;
+            margin-left: 0.8rem;
+        }
+        footer {
+            margin-top: 5rem;
+        }
+        footer .pied-page .noshebergements,
+        footer .pied-page .assistance {
+            margin-top: -2.5rem;
+        }
+    }
+    
+    @media all and (max-device-width: 375px) {
+        header nav .conteneur-hebergement-activite .activites {
+            border-bottom: #F2F2F2 solid 3px;
+            padding: 11px 70px;
+        }
+        header nav .conteneur-hebergement-activite .hebergements {
+            border-bottom: #0065FC solid 3px;
+            padding: 11px 40px;
+            /* margin-left: -0.7rem; */
+            margin-left: -6.7rem;
+        }
+        .galerie-hebergement .item-galerie {
+            margin-left: 1.65rem;
+        }
+        #activites .galerie-activite .item-galerie-activite-photo-unique {
+            margin-left: 1.6rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
+            margin-left: 1.6rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout {
+            margin-left: 1.6rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame {
+            margin-left: 1.6rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc {
+            margin-left: 1.6rem;
+        }
+    }
+    
+    @media all and (max-width: 365px) {
+        header nav .sign-up {
+            margin-left: 7rem;
+        }
+        header nav .conteneur-hebergement-activite .activites {
+            border-bottom: none;
+            padding: 11px 45px;
+        }
+        header nav .conteneur-hebergement-activite .hebergements {
+            border-bottom: none;
+            padding: 11px 35px;
+            /* margin-left: -0.7rem; */
+            margin-left: -7rem;
+        }
+        button[type="submit"] {
+            width: 3.44rem;
+            /* margin-left: -5rem; */
+        }
+        input[type="text"] {
+            border: 0.063rem solid #f2f2f2;
+            width: 12rem;
+            font-size: 1.13rem;
+            font-weight: bold;
+            padding-left: 0.2rem;
+        }
+        #activites .galerie-activite .item-galerie-activite-photo-unique {
+            width: 90%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
+            width: 120%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout {
+            width: 120%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame {
+            width: 120%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc {
+            width: 120%;
+        }
+        aside {
+            background: none;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .bloc-galerie-aside {
+            flex-direction: column;
+            margin-top: -2rem;
+        }
+        .bloc-galerie-aside .item-aside {
+            flex-direction: column;
+            width: 80%;
+            height: 19rem;
+        }
+        .bloc-galerie-aside .item-aside img {
+            width: 100%;
+            height: 8.13rem;
+            border-top-left-radius: 1.25rem;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 1.25rem;
+        }
+    }
+    
+    @media all and (max-width: 320px) {
+        header nav .sign-up {
+            margin-left: 2rem;
+        }
+        header nav .conteneur-hebergement-activite .hebergements {
+            border-bottom: none;
+            padding: 11px 25px;
+            /* margin-left: -0.7rem; */
+            margin-left: -7.5rem;
+        }
+        header nav .conteneur-hebergement-activite .activites {
+            border-bottom: none;
+            padding: 11px 10px;
+        }
+        .principale .conteneur-filtres .item-filtre {
+            margin-left: 0rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
+            width: 100%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout {
+            width: 100%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame {
+            width: 100%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc {
+            width: 100%;
+        }
+    }
+    
+    @media all and (max-width: 275px) {
+        header nav .conteneur-hebergement-activite {
+            margin-left: 0rem;
+            flex-direction: column;
+            margin-top: 4rem;
+            order: 1;
+        }
+        header nav .conteneur-hebergement-activite .hebergements {
+            padding: 0;
+            /* margin-left: -0.7rem; */
+            margin-left: -9.5rem;
+        }
+        header nav .sign-up {
+            margin-top: 8rem;
+            margin-left: -10rem;
+            order: 2;
+        }
+        header nav .conteneur-hebergement-activite .activites {
+            border-bottom: none;
+            padding: 11px 0px;
+            margin-left: -9.5rem;
+        }
+        .principale h1 {
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        aside h2 {
+            width: 65%;
+            margin-left: 0rem;
+            font-size: 1rem;
+        }
+        .bloc-galerie-aside .item-aside {
+            margin-left: 0;
+            width: 9rem;
+            height: 20rem;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
+            width: 90%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .ile-du-friout {
+            width: 90%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Notre-dame {
+            width: 90%;
+        }
+        #activites .galerie-activite .item-parent-galerie-activite-photo-double .Parc {
+            width: 90%;
+        }
+        .galerie-hebergement .item-galerie {
+            height: 20rem;
+        }
+        input[type="text"] {
+            border: 0.063rem solid #f2f2f2;
+            width: 9rem;
+            font-size: 1.13rem;
+            font-weight: bold;
+            padding-left: 0.2rem;
+        }
+         ::-webkit-input-placeholder {
+            font-size: 0.8rem;
+        }
+    }
