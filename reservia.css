@@ -85,7 +85,7 @@
         padding-left: 1rem;
     }
     
-     ::-webkit-input-placeholder {
+     ::placeholder {
         color: black;
         font-weight: bold;
         font-size: 1.13rem;
@@ -489,11 +489,6 @@
             background: inherit;
         }
     }
-    /* @media all and (max-width: 1228px) {
-    #activites p {
-        margin-top: 0.2rem;
-    }
-}  */
     
     @media all and (max-width: 900px) {
         .galerie-hebergement .item-galerie {
@@ -554,53 +549,17 @@
     }
     
     @media all and (max-width: 443px) {
-        /* header nav .sign-up {
-            order: 1;
-            margin-left: 9rem;
-            margin-top: 2.3rem;
-        }
-        header nav .conteneur-hebergement-activite {
-            order: 2;
-            margin-left: -7rem;
-            margin-top: 1rem;
-        }
-        header nav .conteneur-hebergement-activite a {
-            padding: 0.688rem 2.5rem;
-            font-size: 1.125rem;
-        }
-        header nav a:hover {
-            border-top: none;
-        } */
-        /* header {
-            flex-wrap: wrap;
-            position: relative;
-        } */
-        /* header nav {
-            display: flex;
-            flex-wrap: nowrap;
-        } */
         header nav .sign-up {
-            /* position: absolute;
-            top: 1.4rem;
-            right: 0; */
             order: 1;
             margin-top: 2.3rem;
             margin-left: 10rem;
         }
-        /* header nav .sign-up a {
-            padding: 0;
-            padding-right: 1rem;
-        } */
         header nav .conteneur-hebergement-activite {
             display: flex;
             order: 2;
             margin-left: -6rem;
         }
-        header nav .conteneur-hebergement-activite .activites {
-            /* border-bottom: #F2F2F2 solid 3px; */
-        }
         header nav .conteneur-hebergement-activite .hebergements {
-            /* border-bottom: #0065FC solid 3px; */
             padding: 11px 50px;
             margin-left: -2rem;
         }
@@ -642,19 +601,15 @@
             margin-left: 0rem;
         }
         header nav .conteneur-hebergement-activite .activites {
-            border-bottom: #F2F2F2 solid 3px;
-            padding: 11px 65px;
+            border-bottom: #F2F2F2 solid 0.188rem;
+            padding: 0.688rem 4.03rem;
         }
         header nav .conteneur-hebergement-activite .hebergements {
-            border-bottom: #0065FC solid 3px;
+            border-bottom: #0065FC solid 0.188rem;
             padding: 11px 35px;
-            /* margin-left: -0.7rem; */
             margin-left: -7rem;
         }
-        header nav .conteneur-hebergement-activite a {
-            /* width: 100%; */
-            /* text-align: center; */
-        }
+        header nav .conteneur-hebergement-activite a {}
         header nav .sign-up {
             margin-left: 9rem;
         }
@@ -663,8 +618,8 @@
         }
         aside {
             border-radius: inherit;
-            margin-right: -0.55rem;
-            margin-left: -0.55rem;
+            margin-right: -0.63rem;
+            margin-left: -0.58rem;
         }
         #Hebergement {
             margin-right: 0rem;
@@ -743,13 +698,12 @@
     
     @media all and (max-device-width: 375px) {
         header nav .conteneur-hebergement-activite .activites {
-            border-bottom: #F2F2F2 solid 3px;
+            border-bottom: #F2F2F2 solid 0.188rem;
             padding: 11px 70px;
         }
         header nav .conteneur-hebergement-activite .hebergements {
-            border-bottom: #0065FC solid 3px;
-            padding: 11px 40px;
-            /* margin-left: -0.7rem; */
+            border-bottom: #0065FC solid 0.188rem;
+            padding: 0.688rem 2.5rem;
             margin-left: -6.7rem;
         }
         .galerie-hebergement .item-galerie {
@@ -778,17 +732,15 @@
         }
         header nav .conteneur-hebergement-activite .activites {
             border-bottom: none;
-            padding: 11px 45px;
+            padding: 0.688rem 2.813rem;
         }
         header nav .conteneur-hebergement-activite .hebergements {
             border-bottom: none;
             padding: 11px 35px;
-            /* margin-left: -0.7rem; */
             margin-left: -7rem;
         }
         button[type="submit"] {
             width: 3.44rem;
-            /* margin-left: -5rem; */
         }
         input[type="text"] {
             border: 0.063rem solid #f2f2f2;
@@ -842,15 +794,14 @@
         header nav .conteneur-hebergement-activite .hebergements {
             border-bottom: none;
             padding: 11px 25px;
-            /* margin-left: -0.7rem; */
             margin-left: -7.5rem;
         }
         header nav .conteneur-hebergement-activite .activites {
             border-bottom: none;
-            padding: 11px 10px;
+            padding: 0.688rem 0.625rem;
         }
         .principale .conteneur-filtres .item-filtre {
-            margin-left: 0rem;
+            margin-left: 0;
         }
         #activites .galerie-activite .item-parent-galerie-activite-photo-double .fort-de-pomegue {
             width: 100%;
@@ -868,14 +819,13 @@
     
     @media all and (max-width: 275px) {
         header nav .conteneur-hebergement-activite {
-            margin-left: 0rem;
+            margin-left: 0;
             flex-direction: column;
             margin-top: 4rem;
             order: 1;
         }
         header nav .conteneur-hebergement-activite .hebergements {
             padding: 0;
-            /* margin-left: -0.7rem; */
             margin-left: -9.5rem;
         }
         header nav .sign-up {
@@ -885,7 +835,7 @@
         }
         header nav .conteneur-hebergement-activite .activites {
             border-bottom: none;
-            padding: 11px 0px;
+            padding: 0.688rem 0rem;
             margin-left: -9.5rem;
         }
         .principale h1 {
@@ -894,7 +844,7 @@
         }
         aside h2 {
             width: 65%;
-            margin-left: 0rem;
+            margin-left: 0;
             font-size: 1rem;
         }
         .bloc-galerie-aside .item-aside {
@@ -924,7 +874,7 @@
             font-weight: bold;
             padding-left: 0.2rem;
         }
-         ::-webkit-input-placeholder {
+         ::placeholder {
             font-size: 0.8rem;
         }
     }
