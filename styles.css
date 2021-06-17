@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /**********Les généralités du site**********/
+=======
+/**********Généralités**********/
+>>>>>>> dev
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 * {
@@ -20,7 +24,7 @@ body {
 /********* Entête de la page *******/
 
 
-/* Solution 1 AVEC ONLY FLEX */
+/* Solution 1 en utilisant FLEX */
 
 
 /* header {
