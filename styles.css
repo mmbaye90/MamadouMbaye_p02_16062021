@@ -9,7 +9,7 @@ body {
 }
 
 #blocpage {
-    width: 95%;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -485,10 +485,11 @@ footer .pied-page {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
+    margin-left: 2.7rem;
 }
 
 footer .pied-page .item-pied-page {
-    margin-right: 17rem;
+    margin-right: 12rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
