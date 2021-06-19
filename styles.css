@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-/**********Les généralités du site**********/
-=======
-/**********Généralités**********/
->>>>>>> dev
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 * {
-    font-family: 'Raleway-Regular', sans-serif;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 
