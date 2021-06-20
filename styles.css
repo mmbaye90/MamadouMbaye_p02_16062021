@@ -1,5 +1,5 @@
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
     box-sizing: border-box;
 }
 
@@ -489,7 +489,7 @@ footer .pied-page {
 }
 
 footer .pied-page .item-pied-page {
-    margin-right: 12.5rem;
+    margin-right: 11.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
